@@ -1,4 +1,4 @@
 node {
     stage 'Run Jmeter test'
-    sh 'sh /Users/hadoop/apache-jmeter-5.0/bin/jmeter -n -t  /Users/hadoop/apache-jmeter-5.0/Mytests/commandlineTests.jmx -Jusers=250  -l  /Users/hadoop/apache-jmeter-5.0/Mytests/commandlineTestsresult.jtl'
+    sh 'sh /Users/hadoop/apache-jmeter-5.0/bin/jmeter -n -t  /Users/hadoop/apache-jmeter-5.0/Mytests/commandlineTests.jmx -Jusers=300  -l  /Users/hadoop/apache-jmeter-5.0/Mytests/commandlineTestsresult.jtl'
  }
