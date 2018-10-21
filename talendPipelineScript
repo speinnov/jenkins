@@ -1,0 +1,35 @@
+pipeline {
+	agent any
+
+	stages {
+		stage('build'){
+
+			steps{
+				withMaven(maven: 'mvn353'){
+
+				sh 'mvn clean compile'
+				} 
+				
+			}
+		}
+		stage('test'){
+			steps{
+			withMaven(maven: 'mvn353'){
+					sh 'mvn test'
+					junit 'reports/**/*.xml'
+				}
+			}
+		}
+		stage('Deploy'){
+			steps{
+				withMaven(maven: 'mvn353'){
+
+					sh 'make deploy'
+				}			
+			}
+		}
+
+	}
+
+
+}
