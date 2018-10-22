@@ -13,12 +13,10 @@ pipeline {
  -Dcommandline.host=macbookprobigdata.local \
  -Dcommandline.port=8002 \
  -Dcommandline.user=jobbuilder@talend.com \
- -DprojectsTargetDirectory=/Users/hadoop/talend_builder/Talend-CI-Builder-20170623_1246-V6.4.1/JENKINS_HOME/workspace⁩/GenerateSources/BuildSources \
- -DitemFilter="(type=process)"'
+ -DprojectsTargetDirectory=/Users/hadoop/talend_builder/Talend-CI-Builder-20170623_1246-V6.4.1/JENKINS_HOME/workspace⁩/GenerateSources/BuildSources'
 									} 
         		        	} 
 		     }
 	}
-// add deployment 
 }
 
