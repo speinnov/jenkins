@@ -2,34 +2,23 @@ pipeline {
 	agent any
 
 	stages {
-		stage('build'){
+			stage('build'){
 
-			steps{
-				withMaven(maven: 'MVN353'){
-
-				sh 'mvn clean compile'
-				} 
-				
-			}
-		}
-		stage('test'){
-			steps{
-			withMaven(maven: 'MVN353'){
-					sh 'mvn test'
-					junit 'reports/**/*.xml'
-				}
-			}
-		}
-		stage('Deploy'){
-			steps{
-				withMaven(maven: 'MVN353'){
-
-					sh 'make deploy'
-				}			
-			}
-		}
-
+			        		steps{
+			        				withMaven(maven: 'MVN353'){
+				sh 'mvn clean generate-sources -fn -e  org.talend:ci.builder:6.4.1:generate -X \
+ -Dcommandline.workspace="/Users/hadoop/talend_builder/Talend-CI-Builder-20170623_1246-V6.4.1/JENKINS_HOME/workspace⁩/talend_pipelineFroGithub⁩/" \
+ -f /Users/hadoop/talend_builder/Talend-CI-Builder-20170623_1246-V6.4.1/BuildJob_remote_pom1.xml \
+  -s /Applications/CommandLine641/configuration/maven_user_settings.xml  \
+ -Dcommandline.host=macbookprobigdata.local \
+ -Dcommandline.port=8002 \
+ -Dcommandline.user=jobbuilder@talend.com \
+ -DprojectsTargetDirectory=/Users/hadoop/talend_builder/Talend-CI-Builder-20170623_1246-V6.4.1/JENKINS_HOME/workspace⁩/GenerateSources/BuildSources \
+ -DitemFilter="(type=process)"'
+									} 
+        		        	} 
+		     }
 	}
-
-
+// add deployment 
 }
+
