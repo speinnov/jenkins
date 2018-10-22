@@ -14,6 +14,13 @@
 	<version>@JobVersion@</version>
 	<name>@ProjectName@ @JobName@ (@JobType@)</name>
 
+<distributionManagement>
+   <snapshotRepository>
+      <id>talend-snapshots</id>
+      <url>http://macbookprobigdata.local:8181/nexus/content/repositories/talend-snapshots</url>
+   </snapshotRepository>
+</distributionManagement>
+
 	<properties>
 		<talend.job.path>@JobPath@</talend.job.path>
 		<talend.job.package>@JobPackage@</talend.job.package>
@@ -53,6 +60,8 @@
 		<!-- Add some dependencies jars -->
 	</dependencies>
 
+
+
 	<build>
 		<finalName>${talend.job.finalName}</finalName>
 		<resources>
@@ -64,6 +73,28 @@
             </resource>
         </resources>
 		<plugins>
+
+			<plugin>
+   <groupId>org.sonatype.plugins</groupId>
+   <artifactId>nexus-staging-maven-plugin</artifactId>
+   <version>1.5.1</version>
+   <executions>
+      <execution>
+         <id>default-deploy</id>
+         <phase>deploy</phase>
+         <goals>
+            <goal>deploy</goal>
+         </goals>
+      </execution>
+   </executions>
+   <configuration>
+      <serverId>nexus</serverId>
+      <nexusUrl>http://macbookprobigdata.local:8181/nexus/</nexusUrl>
+      <skipStaging>true</skipStaging>
+   </configuration>
+</plugin>
+
+
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-clean-plugin</artifactId>
