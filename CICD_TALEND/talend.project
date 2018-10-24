@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
-  <TalendProperties:Project xmi:id="_woW5sdfgEei3rLEkCfJc8g" label="CICD_TALEND" description="CICD_TALEND" language="java" technicalLabel="CICD_TALEND" creationDate="2018-10-25T00:57:35.091+0200" author="_woXgwNfgEei3rLEkCfJc8g" productVersion="Talend Big Data Platform-6.4.1.20170623_1246" url="{&quot;commitLogPattern&quot;:&quot;{0}&quot;,&quot;location&quot;:&quot;https://github.com/speinnov/jenkins.git&quot;,&quot;login&quot;:&quot;speinnov&quot;,&quot;passwd&quot;:&quot;bNmX450bopPlaqE79ZhxTA==&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DI">
+  <TalendProperties:Project xmi:id="_woW5sdfgEei3rLEkCfJc8g" label="CICD_TALEND" description="CICD_TALEND" language="java" technicalLabel="CICD_TALEND" creationDate="2018-10-25T00:57:35.091+0200" author="_woXgwNfgEei3rLEkCfJc8g" productVersion="Talend Big Data Platform-6.4.1.20170623_1246" url="{&quot;commitLogPattern&quot;:&quot;{0}&quot;,&quot;location&quot;:&quot;https://github.com/speinnov/jenkins.git&quot;,&quot;login&quot;:&quot;speinnov&quot;,&quot;passwd&quot;:&quot;bNmX450bopPlaqE79ZhxTA==&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DI" itemsRelationVersion="1.3">
+    <technicalStatus xmi:id="_wr-1cNfgEei3rLEkCfJc8g" label="development" code="DEV"/>
+    <technicalStatus xmi:id="_wr-1cdfgEei3rLEkCfJc8g" label="testing" code="TEST"/>
+    <technicalStatus xmi:id="_wr-1ctfgEei3rLEkCfJc8g" label="production" code="PROD"/>
+    <documentationStatus xmi:id="_wr9AQNfgEei3rLEkCfJc8g" label="unchecked" code="UCK"/>
+    <documentationStatus xmi:id="_wr9AQdfgEei3rLEkCfJc8g" label="checked" code="CHK"/>
+    <documentationStatus xmi:id="_wr9AQtfgEei3rLEkCfJc8g" label="validated" code="VAL"/>
     <migrationTask xmi:id="_wro3MNfgEei3rLEkCfJc8g" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_wro3MdfgEei3rLEkCfJc8g" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_wro3MtfgEei3rLEkCfJc8g" id="org.talend.repository.model.migration.CleanFoldersMigrationTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
