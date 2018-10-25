@@ -9,14 +9,14 @@
  
  ⁩
 <properties>
-    <!-- Required. Commandline application workspace and Studio path, only for local(script) mode --> 
-    <commandline.workspace>/Users/hadoop⁩/talend_builder⁩/Talend-CI-Builder-20170623_1246-V6.4.1⁩/JENKINS_HOME⁩/workspace⁩/talend_job_pipeline⁩</commandline.workspace>
-    <product.path>‎/Applications⁩/CommandLine641⁩</product.path>
-    <!-- Optional. Specify target directory where generated sources will be stored --> 
-    <!--projectsTargetDirectory>${basedir}/projectSources</projectsTargetDirectory. RunTests/projectSources --> 
-    <projectsTargetDirectory>/Users/hadoop⁩/talend_builder⁩/Talend-CI-Builder-20170623_1246-V6.4.1⁩/JENKINS_HOME⁩/workspace⁩/talend_job_pipeline⁩/target/</projectsTargetDirectory> 
+    <!-- Required. Commandline application workspace and Studio path, only for local(script) mode -->
+    <commandline.workspace>/Users/hadoop/talend_builder/Talend-CI-Builder-20170623_1246-V6.4.1/JENKINS_HOME/workspace/talend_job_pipeline</commandline.workspace>
+    <product.path>/Applications/CommandLine641</product.path>
+    <!-- Optional. Specify target directory where generated sources will be stored -->
+    <!--projectsTargetDirectory>${basedir}/projectSources</projectsTargetDirectory/RunTests/projectSources -->
+    <projectsTargetDirectory>/Users/hadoop/talend_builder/Talend-CI-Builder-20170623_1246-V6.4.1/JENKINS_HOME/workspace/talend_job_pipeline/target/</projectsTargetDirectory>
     <!-- Optional. Specify version for the artifact to be built. Can be set for each Job independentl-->
-    <launcherPath>/Applications⁩/CommandLine641⁩/plugins/org.eclipse.equinox.launcher_1.3.0.v20140415-2008.jar</launcherPath>
+    <launcherPath>/Applications/CommandLine641/plugins/org.eclipse.equinox.launcher_1.3.0.v20140415-2008.jar</launcherPath>
     <deploy.version>1.1.0-SNAPSHOT</deploy.version>
 </properties>
 
