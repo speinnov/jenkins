@@ -9,7 +9,7 @@
     <plugins>
         <plugin>
             <groupId>org.talend.cicd</groupId> 
-            <artifactId>cicd_talend_main⁩</artifactId> 
+            <artifactId>ci.builder⁩</artifactId> 
             <version>1.1.0-SNAPSHOT</version> 
             <executions>
                 <execution> 
