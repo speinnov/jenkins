@@ -1,28 +1,16 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
- 
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 <modelVersion>4.0.0</modelVersion>
 <groupId>org.talend.cicd</groupId>
 <artifactId>CICD_TALEND⁩</artifactId>
 <version>1.1.0-SNAPSHOT</version>
 <packaging>pom</packaging>
- 
- ⁩
-<properties>
-   
-</properties>
-
-
+<properties/>
 <build>
     <plugins>
         <plugin>
-
-            
-
             <groupId>org.talend.cicd</groupId> 
             <artifactId>CICD_TALEND⁩</artifactId> 
             <version>1.1.0-SNAPSHOT</version> 
-        
             <executions>
                 <execution> 
                     <phase>generate-sources</phase> 
@@ -31,41 +19,24 @@
                         <goal>local-generate</goal> 
                     </goals>
                     <configuration>
-                    <!-- Optional. Specify CommandLine user --> 
-                        <commandlineUser>jobbuilder@talend.com</commandlineUser> 
-                        <!-- Optional. Jvm     Parameters for local(script) mode -->
-                        <!-- <jvmArguments>-ea -Xms512m -Xmx1300m -XX:+CMSClassUnloadingEnabled -XX:MinHeapFreeRatio=10         -XX:MaxHeapFreeRatio=20 -XX:+HeapDumpOnOutOfMemoryError</jvmArguments> -->
-                        <!-- Optional. Parameter used to filter on specific Job status (TEST, DEV, PROD, etc) -->
-                        <!-- <itemFilter>(status=TEST)or(status=PROD)or(status="")</itemFilter> --> 
+                     
                     </configuration>
                 </execution> 
             </executions>
-
         </plugin>
     </plugins>
 </build>
-
- 
 <pluginRepositories>
     <!--everything through Maven Central Proxy -->
-        
-      
 		<pluginRepository>
 			<id>central</id>
 			<name>maven-central</name>
-				<url>http://macbookprobigdata.local:8181/nexus/content/repositories/maven-central/</url>
-			 
+				<url>http://macbookprobigdata.local:8181/nexus/content/repositories/maven-central</url>
 		</pluginRepository>
 		<pluginRepository>
 			<id>thirdparty</id>
 			<name>thirdparty</name>
-			<url>http://macbookprobigdata.local:8181/nexus/content/repositories/thirdparty/</url>
-			 
+			<url>http://macbookprobigdata.local:8181/nexus/content/repositories/thirdparty</url>	 
 		</pluginRepository>
-
 </pluginRepositories>
- 
-
 </project>
-
-
