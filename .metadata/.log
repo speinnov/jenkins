@@ -1132,3 +1132,599 @@ org.osgi.framework.BundleException: Could not resolve module: org.eclipse.compar
 !ENTRY org.talend.platform.logging 1 0 2018-10-25 00:58:11.074
 !MESSAGE 2018-10-25 00:58:11,072 INFO  org.talend.repository.ui.login.LoginProjectPage  - validate updatesite...
 
+!SESSION 2018-10-27 22:11:32.198 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_92
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=fr
+Framework arguments:  -talendReload false -VM /Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home -keyring /Users/hadoop/.eclipse_keyring -showlocation /Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home/jre/lib/server/libjvm.dylib
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -data /Users/hadoop/github_repo/jenkins -talendReload false -VM /Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home -keyring /Users/hadoop/.eclipse_keyring -showlocation /Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home/jre/lib/server/libjvm.dylib
+
+!ENTRY org.talend.designer.esb.bpm.ui 4 0 2018-10-27 22:11:33.279
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.talend.designer.esb.bpm.ui [20]
+  Unresolved requirement: Require-Bundle: org.talend.repository.services
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.compare.win32 4 0 2018-10-27 22:11:33.302
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.compare.win32 [1004]
+  Unresolved requirement: Require-Capability: eclipse.platform; filter:="(osgi.os=win32)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.core.resources 2 10035 2018-10-27 22:11:35.378
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.core.net 1 0 2018-10-27 22:11:36.123
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.emf.ecore 2 0 2018-10-27 22:11:36.561
+!MESSAGE Both 'org.talend.model.tac' and 'org.talend.model.tac' register a package for 'http://www.talend.org/tac/esb'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2018-10-27 22:11:36.563
+!MESSAGE Both 'org.talend.model' and 'org.talend.model' register a package for 'platform:/resource/org.talend.model/model/TalendFile.xsd'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2018-10-27 22:11:36.567
+!MESSAGE Both 'org.talend.designer.sparkmap' and 'org.talend.designer.sparkmap' register an extension parser for 'sparkmap'
+
+!ENTRY org.talend.platform.logging 4 0 2018-10-27 22:11:38.112
+!MESSAGE 2018-10-27 22:11:38,111 ERROR org.talend.commons.exception.CommonExceptionHandler  - org.xml.sax.SAXParseExceptionpublicId: platform:/resource/CICD_TALEND/talend.project; systemId: platform:/resource/CICD_TALEND/talend.project; lineNumber: 3; columnNumber: 2; Le contenu des éléments doit inclure un balisage ou des caractères au format correct.
+
+!STACK 0
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl$1DiagnosticWrappedException: org.xml.sax.SAXParseExceptionpublicId: platform:/resource/CICD_TALEND/talend.project; systemId: platform:/resource/CICD_TALEND/talend.project; lineNumber: 3; columnNumber: 2; Le contenu des éléments doit inclure un balisage ou des caractères au format correct.
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.handleDemandLoadException(ResourceSetImpl.java:319)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:278)
+	at org.talend.core.repository.utils.TalendResourceSet.getResource(TalendResourceSet.java:112)
+	at org.talend.core.repository.utils.XmiResourceManager.loadProject(XmiResourceManager.java:121)
+	at org.talend.repository.localprovider.model.LocalRepositoryFactory.readProject(LocalRepositoryFactory.java:1090)
+	at org.talend.repository.localprovider.model.LocalRepositoryFactory.readProject(LocalRepositoryFactory.java:1048)
+	at org.talend.repository.localprovider.model.LocalRepositoryFactory.readProjects(LocalRepositoryFactory.java:1037)
+	at org.talend.repository.localprovider.model.LocalRepositoryFactory.readProject(LocalRepositoryFactory.java:1114)
+	at org.talend.core.repository.model.ProxyRepositoryFactory.readProject(ProxyRepositoryFactory.java:655)
+	at org.talend.repository.ui.login.LoginHelper$4.run(LoginHelper.java:637)
+	at org.talend.repository.ui.login.LoginHelper$4.run(LoginHelper.java:1)
+	at org.talend.repository.ui.dialog.OverTimePopupDialogTask$1.call(OverTimePopupDialogTask.java:76)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.xml.sax.SAXParseExceptionpublicId: platform:/resource/CICD_TALEND/talend.project; systemId: platform:/resource/CICD_TALEND/talend.project; lineNumber: 3; columnNumber: 2; Le contenu des éléments doit inclure un balisage ou des caractères au format correct.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1438)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.startOfMarkup(XMLDocumentFragmentScannerImpl.java:2637)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2735)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:118)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:327)
+	at org.eclipse.emf.ecore.xmi.impl.XMLLoadImpl.load(XMLLoadImpl.java:175)
+	at org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl.doLoad(XMLResourceImpl.java:261)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1518)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1297)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoad(ResourceSetImpl.java:259)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:274)
+	... 12 more
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-27 22:11:38.141
+!MESSAGE 2018-10-27 22:11:38,141 INFO  org.talend.repository.ui.login.LoginProjectPage  - validate updatesite...
+
+
+!ENTRY org.talend.platform.logging 4 0 2018-10-27 22:12:01.455
+!MESSAGE 2018-10-27 22:12:01,454 ERROR org.talend.commons.exception.CommonExceptionHandler  - org.xml.sax.SAXParseExceptionpublicId: platform:/resource/CICD_TALEND/talend.project; systemId: platform:/resource/CICD_TALEND/talend.project; lineNumber: 3; columnNumber: 2; Le contenu des éléments doit inclure un balisage ou des caractères au format correct.
+
+!STACK 0
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl$1DiagnosticWrappedException: org.xml.sax.SAXParseExceptionpublicId: platform:/resource/CICD_TALEND/talend.project; systemId: platform:/resource/CICD_TALEND/talend.project; lineNumber: 3; columnNumber: 2; Le contenu des éléments doit inclure un balisage ou des caractères au format correct.
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.handleDemandLoadException(ResourceSetImpl.java:319)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:278)
+	at org.talend.core.repository.utils.TalendResourceSet.getResource(TalendResourceSet.java:112)
+	at org.talend.core.repository.utils.XmiResourceManager.loadProject(XmiResourceManager.java:121)
+	at org.talend.repository.localprovider.model.LocalRepositoryFactory.readProject(LocalRepositoryFactory.java:1090)
+	at org.talend.repository.localprovider.model.LocalRepositoryFactory.readProject(LocalRepositoryFactory.java:1048)
+	at org.talend.repository.localprovider.model.LocalRepositoryFactory.readProjects(LocalRepositoryFactory.java:1037)
+	at org.talend.repository.localprovider.model.LocalRepositoryFactory.readProject(LocalRepositoryFactory.java:1114)
+	at org.talend.core.repository.model.ProxyRepositoryFactory.readProject(ProxyRepositoryFactory.java:655)
+	at org.talend.repository.ui.login.LoginHelper$4.run(LoginHelper.java:637)
+	at org.talend.repository.ui.login.LoginHelper$4.run(LoginHelper.java:1)
+	at org.talend.repository.ui.dialog.OverTimePopupDialogTask$1.call(OverTimePopupDialogTask.java:76)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.xml.sax.SAXParseExceptionpublicId: platform:/resource/CICD_TALEND/talend.project; systemId: platform:/resource/CICD_TALEND/talend.project; lineNumber: 3; columnNumber: 2; Le contenu des éléments doit inclure un balisage ou des caractères au format correct.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1438)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.startOfMarkup(XMLDocumentFragmentScannerImpl.java:2637)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2735)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:118)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:327)
+	at org.eclipse.emf.ecore.xmi.impl.XMLLoadImpl.load(XMLLoadImpl.java:175)
+	at org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl.doLoad(XMLResourceImpl.java:261)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1518)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1297)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoad(ResourceSetImpl.java:259)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:274)
+	... 12 more
+
+!ENTRY org.talend.platform.logging 4 0 2018-10-27 22:12:01.472
+!MESSAGE 2018-10-27 22:12:01,471 ERROR org.talend.commons.exception.CommonExceptionHandler  - org.xml.sax.SAXParseExceptionpublicId: platform:/resource/CICD_TALEND/talend.project; systemId: platform:/resource/CICD_TALEND/talend.project; lineNumber: 3; columnNumber: 2; Le contenu des éléments doit inclure un balisage ou des caractères au format correct.
+
+!STACK 0
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl$1DiagnosticWrappedException: org.xml.sax.SAXParseExceptionpublicId: platform:/resource/CICD_TALEND/talend.project; systemId: platform:/resource/CICD_TALEND/talend.project; lineNumber: 3; columnNumber: 2; Le contenu des éléments doit inclure un balisage ou des caractères au format correct.
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.handleDemandLoadException(ResourceSetImpl.java:319)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:278)
+	at org.talend.core.repository.utils.TalendResourceSet.getResource(TalendResourceSet.java:112)
+	at org.talend.core.repository.utils.XmiResourceManager.loadProject(XmiResourceManager.java:121)
+	at org.talend.repository.localprovider.model.LocalRepositoryFactory.readProject(LocalRepositoryFactory.java:1090)
+	at org.talend.repository.localprovider.model.LocalRepositoryFactory.readProject(LocalRepositoryFactory.java:1048)
+	at org.talend.repository.localprovider.model.LocalRepositoryFactory.readProjects(LocalRepositoryFactory.java:1037)
+	at org.talend.repository.localprovider.model.LocalRepositoryFactory.readProject(LocalRepositoryFactory.java:1114)
+	at org.talend.core.repository.model.ProxyRepositoryFactory.readProject(ProxyRepositoryFactory.java:655)
+	at org.talend.repository.ui.login.LoginHelper$4.run(LoginHelper.java:637)
+	at org.talend.repository.ui.login.LoginHelper$4.run(LoginHelper.java:1)
+	at org.talend.repository.ui.dialog.OverTimePopupDialogTask$1.call(OverTimePopupDialogTask.java:76)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.xml.sax.SAXParseExceptionpublicId: platform:/resource/CICD_TALEND/talend.project; systemId: platform:/resource/CICD_TALEND/talend.project; lineNumber: 3; columnNumber: 2; Le contenu des éléments doit inclure un balisage ou des caractères au format correct.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1438)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.startOfMarkup(XMLDocumentFragmentScannerImpl.java:2637)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2735)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:118)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:327)
+	at org.eclipse.emf.ecore.xmi.impl.XMLLoadImpl.load(XMLLoadImpl.java:175)
+	at org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl.doLoad(XMLResourceImpl.java:261)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1518)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1297)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoad(ResourceSetImpl.java:259)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:274)
+	... 12 more
+!SESSION 2018-10-27 22:23:28.724 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_92
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=fr
+Framework arguments:  -talendReload false -VM /Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home -keyring /Users/hadoop/.eclipse_keyring -showlocation /Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home/jre/lib/server/libjvm.dylib
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -data /Users/hadoop/github_repo/jenkins -talendReload false -VM /Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home -keyring /Users/hadoop/.eclipse_keyring -showlocation /Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home/jre/lib/server/libjvm.dylib
+
+!ENTRY org.talend.designer.esb.bpm.ui 4 0 2018-10-27 22:23:29.924
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.talend.designer.esb.bpm.ui [20]
+  Unresolved requirement: Require-Bundle: org.talend.repository.services
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.compare.win32 4 0 2018-10-27 22:23:29.948
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.compare.win32 [1004]
+  Unresolved requirement: Require-Capability: eclipse.platform; filter:="(osgi.os=win32)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.core.resources 2 10035 2018-10-27 22:23:32.277
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.core.net 1 0 2018-10-27 22:23:32.842
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.emf.ecore 2 0 2018-10-27 22:23:33.396
+!MESSAGE Both 'org.talend.model.tac' and 'org.talend.model.tac' register a package for 'http://www.talend.org/tac/esb'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2018-10-27 22:23:33.398
+!MESSAGE Both 'org.talend.model' and 'org.talend.model' register a package for 'platform:/resource/org.talend.model/model/TalendFile.xsd'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2018-10-27 22:23:33.401
+!MESSAGE Both 'org.talend.designer.sparkmap' and 'org.talend.designer.sparkmap' register an extension parser for 'sparkmap'
+
+!ENTRY org.talend.platform.logging 4 0 2018-10-27 22:23:35.120
+!MESSAGE 2018-10-27 22:23:35,118 ERROR org.talend.commons.exception.CommonExceptionHandler  - org.xml.sax.SAXParseExceptionpublicId: platform:/resource/CICD_TALEND/talend.project; systemId: platform:/resource/CICD_TALEND/talend.project; lineNumber: 3; columnNumber: 2; Le contenu des éléments doit inclure un balisage ou des caractères au format correct.
+
+!STACK 0
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl$1DiagnosticWrappedException: org.xml.sax.SAXParseExceptionpublicId: platform:/resource/CICD_TALEND/talend.project; systemId: platform:/resource/CICD_TALEND/talend.project; lineNumber: 3; columnNumber: 2; Le contenu des éléments doit inclure un balisage ou des caractères au format correct.
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.handleDemandLoadException(ResourceSetImpl.java:319)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:278)
+	at org.talend.core.repository.utils.TalendResourceSet.getResource(TalendResourceSet.java:112)
+	at org.talend.core.repository.utils.XmiResourceManager.loadProject(XmiResourceManager.java:121)
+	at org.talend.repository.localprovider.model.LocalRepositoryFactory.readProject(LocalRepositoryFactory.java:1090)
+	at org.talend.repository.localprovider.model.LocalRepositoryFactory.readProject(LocalRepositoryFactory.java:1048)
+	at org.talend.repository.localprovider.model.LocalRepositoryFactory.readProjects(LocalRepositoryFactory.java:1037)
+	at org.talend.repository.localprovider.model.LocalRepositoryFactory.readProject(LocalRepositoryFactory.java:1114)
+	at org.talend.core.repository.model.ProxyRepositoryFactory.readProject(ProxyRepositoryFactory.java:655)
+	at org.talend.repository.ui.login.LoginHelper$4.run(LoginHelper.java:637)
+	at org.talend.repository.ui.login.LoginHelper$4.run(LoginHelper.java:1)
+	at org.talend.repository.ui.dialog.OverTimePopupDialogTask$1.call(OverTimePopupDialogTask.java:76)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.xml.sax.SAXParseExceptionpublicId: platform:/resource/CICD_TALEND/talend.project; systemId: platform:/resource/CICD_TALEND/talend.project; lineNumber: 3; columnNumber: 2; Le contenu des éléments doit inclure un balisage ou des caractères au format correct.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1438)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.startOfMarkup(XMLDocumentFragmentScannerImpl.java:2637)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2735)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:118)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:327)
+	at org.eclipse.emf.ecore.xmi.impl.XMLLoadImpl.load(XMLLoadImpl.java:175)
+	at org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl.doLoad(XMLResourceImpl.java:261)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1518)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1297)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoad(ResourceSetImpl.java:259)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:274)
+	... 12 more
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-27 22:23:35.150
+!MESSAGE 2018-10-27 22:23:35,149 INFO  org.talend.repository.ui.login.LoginProjectPage  - validate updatesite...
+
+
+!ENTRY org.talend.platform.logging 4 0 2018-10-27 22:24:30.518
+!MESSAGE 2018-10-27 22:24:30,517 ERROR org.talend.commons.exception.CommonExceptionHandler  - org.xml.sax.SAXParseExceptionpublicId: platform:/resource/CICD_TALEND/talend.project; systemId: platform:/resource/CICD_TALEND/talend.project; lineNumber: 3; columnNumber: 2; Le contenu des éléments doit inclure un balisage ou des caractères au format correct.
+
+!STACK 0
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl$1DiagnosticWrappedException: org.xml.sax.SAXParseExceptionpublicId: platform:/resource/CICD_TALEND/talend.project; systemId: platform:/resource/CICD_TALEND/talend.project; lineNumber: 3; columnNumber: 2; Le contenu des éléments doit inclure un balisage ou des caractères au format correct.
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.handleDemandLoadException(ResourceSetImpl.java:319)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:278)
+	at org.talend.core.repository.utils.TalendResourceSet.getResource(TalendResourceSet.java:112)
+	at org.talend.core.repository.utils.XmiResourceManager.loadProject(XmiResourceManager.java:121)
+	at org.talend.repository.localprovider.model.LocalRepositoryFactory.readProject(LocalRepositoryFactory.java:1090)
+	at org.talend.repository.localprovider.model.LocalRepositoryFactory.readProject(LocalRepositoryFactory.java:1048)
+	at org.talend.repository.localprovider.model.LocalRepositoryFactory.readProjects(LocalRepositoryFactory.java:1037)
+	at org.talend.repository.localprovider.model.LocalRepositoryFactory.readProject(LocalRepositoryFactory.java:1114)
+	at org.talend.core.repository.model.ProxyRepositoryFactory.readProject(ProxyRepositoryFactory.java:655)
+	at org.talend.repository.ui.login.LoginHelper$4.run(LoginHelper.java:637)
+	at org.talend.repository.ui.login.LoginHelper$4.run(LoginHelper.java:1)
+	at org.talend.repository.ui.dialog.OverTimePopupDialogTask$1.call(OverTimePopupDialogTask.java:76)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.xml.sax.SAXParseExceptionpublicId: platform:/resource/CICD_TALEND/talend.project; systemId: platform:/resource/CICD_TALEND/talend.project; lineNumber: 3; columnNumber: 2; Le contenu des éléments doit inclure un balisage ou des caractères au format correct.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1438)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.startOfMarkup(XMLDocumentFragmentScannerImpl.java:2637)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2735)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:118)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:327)
+	at org.eclipse.emf.ecore.xmi.impl.XMLLoadImpl.load(XMLLoadImpl.java:175)
+	at org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl.doLoad(XMLResourceImpl.java:261)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1518)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1297)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoad(ResourceSetImpl.java:259)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:274)
+	... 12 more
+
+!ENTRY org.talend.platform.logging 4 0 2018-10-27 22:24:30.536
+!MESSAGE 2018-10-27 22:24:30,535 ERROR org.talend.commons.exception.CommonExceptionHandler  - org.xml.sax.SAXParseExceptionpublicId: platform:/resource/CICD_TALEND/talend.project; systemId: platform:/resource/CICD_TALEND/talend.project; lineNumber: 3; columnNumber: 2; Le contenu des éléments doit inclure un balisage ou des caractères au format correct.
+
+!STACK 0
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl$1DiagnosticWrappedException: org.xml.sax.SAXParseExceptionpublicId: platform:/resource/CICD_TALEND/talend.project; systemId: platform:/resource/CICD_TALEND/talend.project; lineNumber: 3; columnNumber: 2; Le contenu des éléments doit inclure un balisage ou des caractères au format correct.
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.handleDemandLoadException(ResourceSetImpl.java:319)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:278)
+	at org.talend.core.repository.utils.TalendResourceSet.getResource(TalendResourceSet.java:112)
+	at org.talend.core.repository.utils.XmiResourceManager.loadProject(XmiResourceManager.java:121)
+	at org.talend.repository.localprovider.model.LocalRepositoryFactory.readProject(LocalRepositoryFactory.java:1090)
+	at org.talend.repository.localprovider.model.LocalRepositoryFactory.readProject(LocalRepositoryFactory.java:1048)
+	at org.talend.repository.localprovider.model.LocalRepositoryFactory.readProjects(LocalRepositoryFactory.java:1037)
+	at org.talend.repository.localprovider.model.LocalRepositoryFactory.readProject(LocalRepositoryFactory.java:1114)
+	at org.talend.core.repository.model.ProxyRepositoryFactory.readProject(ProxyRepositoryFactory.java:655)
+	at org.talend.repository.ui.login.LoginHelper$4.run(LoginHelper.java:637)
+	at org.talend.repository.ui.login.LoginHelper$4.run(LoginHelper.java:1)
+	at org.talend.repository.ui.dialog.OverTimePopupDialogTask$1.call(OverTimePopupDialogTask.java:76)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.xml.sax.SAXParseExceptionpublicId: platform:/resource/CICD_TALEND/talend.project; systemId: platform:/resource/CICD_TALEND/talend.project; lineNumber: 3; columnNumber: 2; Le contenu des éléments doit inclure un balisage ou des caractères au format correct.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1438)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.startOfMarkup(XMLDocumentFragmentScannerImpl.java:2637)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2735)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:118)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:327)
+	at org.eclipse.emf.ecore.xmi.impl.XMLLoadImpl.load(XMLLoadImpl.java:175)
+	at org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl.doLoad(XMLResourceImpl.java:261)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1518)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1297)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoad(ResourceSetImpl.java:259)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:274)
+	... 12 more
+
+!ENTRY org.talend.platform.logging 4 0 2018-10-27 22:24:30.564
+!MESSAGE 2018-10-27 22:24:30,563 ERROR org.talend.commons.exception.CommonExceptionHandler  - org.xml.sax.SAXParseExceptionpublicId: platform:/resource/CICD_TALEND/talend.project; systemId: platform:/resource/CICD_TALEND/talend.project; lineNumber: 3; columnNumber: 2; Le contenu des éléments doit inclure un balisage ou des caractères au format correct.
+
+!STACK 0
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl$1DiagnosticWrappedException: org.xml.sax.SAXParseExceptionpublicId: platform:/resource/CICD_TALEND/talend.project; systemId: platform:/resource/CICD_TALEND/talend.project; lineNumber: 3; columnNumber: 2; Le contenu des éléments doit inclure un balisage ou des caractères au format correct.
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.handleDemandLoadException(ResourceSetImpl.java:319)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:278)
+	at org.talend.core.repository.utils.TalendResourceSet.getResource(TalendResourceSet.java:112)
+	at org.talend.core.repository.utils.XmiResourceManager.loadProject(XmiResourceManager.java:121)
+	at org.talend.repository.localprovider.model.LocalRepositoryFactory.readProject(LocalRepositoryFactory.java:1090)
+	at org.talend.repository.localprovider.model.LocalRepositoryFactory.readProject(LocalRepositoryFactory.java:1048)
+	at org.talend.repository.localprovider.model.LocalRepositoryFactory.readProjects(LocalRepositoryFactory.java:1037)
+	at org.talend.repository.localprovider.model.LocalRepositoryFactory.readProject(LocalRepositoryFactory.java:1114)
+	at org.talend.core.repository.model.ProxyRepositoryFactory.readProject(ProxyRepositoryFactory.java:655)
+	at org.talend.repository.ui.login.LoginHelper$4.run(LoginHelper.java:637)
+	at org.talend.repository.ui.login.LoginHelper$4.run(LoginHelper.java:1)
+	at org.talend.repository.ui.dialog.OverTimePopupDialogTask$1.call(OverTimePopupDialogTask.java:76)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.xml.sax.SAXParseExceptionpublicId: platform:/resource/CICD_TALEND/talend.project; systemId: platform:/resource/CICD_TALEND/talend.project; lineNumber: 3; columnNumber: 2; Le contenu des éléments doit inclure un balisage ou des caractères au format correct.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1438)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.startOfMarkup(XMLDocumentFragmentScannerImpl.java:2637)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2735)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:118)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:327)
+	at org.eclipse.emf.ecore.xmi.impl.XMLLoadImpl.load(XMLLoadImpl.java:175)
+	at org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl.doLoad(XMLResourceImpl.java:261)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1518)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1297)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoad(ResourceSetImpl.java:259)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:274)
+	... 12 more
+
+!ENTRY org.talend.platform.logging 4 0 2018-10-27 22:24:30.579
+!MESSAGE 2018-10-27 22:24:30,579 ERROR org.talend.commons.exception.CommonExceptionHandler  - org.xml.sax.SAXParseExceptionpublicId: platform:/resource/CICD_TALEND/talend.project; systemId: platform:/resource/CICD_TALEND/talend.project; lineNumber: 3; columnNumber: 2; Le contenu des éléments doit inclure un balisage ou des caractères au format correct.
+
+!STACK 0
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl$1DiagnosticWrappedException: org.xml.sax.SAXParseExceptionpublicId: platform:/resource/CICD_TALEND/talend.project; systemId: platform:/resource/CICD_TALEND/talend.project; lineNumber: 3; columnNumber: 2; Le contenu des éléments doit inclure un balisage ou des caractères au format correct.
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.handleDemandLoadException(ResourceSetImpl.java:319)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:278)
+	at org.talend.core.repository.utils.TalendResourceSet.getResource(TalendResourceSet.java:112)
+	at org.talend.core.repository.utils.XmiResourceManager.loadProject(XmiResourceManager.java:121)
+	at org.talend.repository.localprovider.model.LocalRepositoryFactory.readProject(LocalRepositoryFactory.java:1090)
+	at org.talend.repository.localprovider.model.LocalRepositoryFactory.readProject(LocalRepositoryFactory.java:1048)
+	at org.talend.repository.localprovider.model.LocalRepositoryFactory.readProjects(LocalRepositoryFactory.java:1037)
+	at org.talend.repository.localprovider.model.LocalRepositoryFactory.readProject(LocalRepositoryFactory.java:1114)
+	at org.talend.core.repository.model.ProxyRepositoryFactory.readProject(ProxyRepositoryFactory.java:655)
+	at org.talend.repository.ui.login.LoginHelper$4.run(LoginHelper.java:637)
+	at org.talend.repository.ui.login.LoginHelper$4.run(LoginHelper.java:1)
+	at org.talend.repository.ui.dialog.OverTimePopupDialogTask$1.call(OverTimePopupDialogTask.java:76)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.xml.sax.SAXParseExceptionpublicId: platform:/resource/CICD_TALEND/talend.project; systemId: platform:/resource/CICD_TALEND/talend.project; lineNumber: 3; columnNumber: 2; Le contenu des éléments doit inclure un balisage ou des caractères au format correct.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1438)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.startOfMarkup(XMLDocumentFragmentScannerImpl.java:2637)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2735)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:118)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:327)
+	at org.eclipse.emf.ecore.xmi.impl.XMLLoadImpl.load(XMLLoadImpl.java:175)
+	at org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl.doLoad(XMLResourceImpl.java:261)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1518)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1297)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoad(ResourceSetImpl.java:259)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:274)
+	... 12 more
+
+!ENTRY org.talend.platform.logging 4 0 2018-10-27 22:24:30.599
+!MESSAGE 2018-10-27 22:24:30,598 ERROR org.talend.commons.exception.CommonExceptionHandler  - org.xml.sax.SAXParseExceptionpublicId: platform:/resource/CICD_TALEND/talend.project; systemId: platform:/resource/CICD_TALEND/talend.project; lineNumber: 3; columnNumber: 2; Le contenu des éléments doit inclure un balisage ou des caractères au format correct.
+
+!STACK 0
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl$1DiagnosticWrappedException: org.xml.sax.SAXParseExceptionpublicId: platform:/resource/CICD_TALEND/talend.project; systemId: platform:/resource/CICD_TALEND/talend.project; lineNumber: 3; columnNumber: 2; Le contenu des éléments doit inclure un balisage ou des caractères au format correct.
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.handleDemandLoadException(ResourceSetImpl.java:319)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:278)
+	at org.talend.core.repository.utils.TalendResourceSet.getResource(TalendResourceSet.java:112)
+	at org.talend.core.repository.utils.XmiResourceManager.loadProject(XmiResourceManager.java:121)
+	at org.talend.repository.localprovider.model.LocalRepositoryFactory.readProject(LocalRepositoryFactory.java:1090)
+	at org.talend.repository.localprovider.model.LocalRepositoryFactory.readProject(LocalRepositoryFactory.java:1048)
+	at org.talend.repository.localprovider.model.LocalRepositoryFactory.readProjects(LocalRepositoryFactory.java:1037)
+	at org.talend.repository.localprovider.model.LocalRepositoryFactory.readProject(LocalRepositoryFactory.java:1114)
+	at org.talend.core.repository.model.ProxyRepositoryFactory.readProject(ProxyRepositoryFactory.java:655)
+	at org.talend.repository.ui.login.LoginHelper$4.run(LoginHelper.java:637)
+	at org.talend.repository.ui.login.LoginHelper$4.run(LoginHelper.java:1)
+	at org.talend.repository.ui.dialog.OverTimePopupDialogTask$1.call(OverTimePopupDialogTask.java:76)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.xml.sax.SAXParseExceptionpublicId: platform:/resource/CICD_TALEND/talend.project; systemId: platform:/resource/CICD_TALEND/talend.project; lineNumber: 3; columnNumber: 2; Le contenu des éléments doit inclure un balisage ou des caractères au format correct.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1438)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.startOfMarkup(XMLDocumentFragmentScannerImpl.java:2637)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2735)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:118)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:327)
+	at org.eclipse.emf.ecore.xmi.impl.XMLLoadImpl.load(XMLLoadImpl.java:175)
+	at org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl.doLoad(XMLResourceImpl.java:261)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1518)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1297)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoad(ResourceSetImpl.java:259)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:274)
+	... 12 more
+
+!ENTRY org.talend.platform.logging 4 0 2018-10-27 22:24:30.624
+!MESSAGE 2018-10-27 22:24:30,623 ERROR org.talend.commons.exception.CommonExceptionHandler  - org.xml.sax.SAXParseExceptionpublicId: platform:/resource/CICD_TALEND/talend.project; systemId: platform:/resource/CICD_TALEND/talend.project; lineNumber: 3; columnNumber: 2; Le contenu des éléments doit inclure un balisage ou des caractères au format correct.
+
+!STACK 0
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl$1DiagnosticWrappedException: org.xml.sax.SAXParseExceptionpublicId: platform:/resource/CICD_TALEND/talend.project; systemId: platform:/resource/CICD_TALEND/talend.project; lineNumber: 3; columnNumber: 2; Le contenu des éléments doit inclure un balisage ou des caractères au format correct.
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.handleDemandLoadException(ResourceSetImpl.java:319)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:278)
+	at org.talend.core.repository.utils.TalendResourceSet.getResource(TalendResourceSet.java:112)
+	at org.talend.core.repository.utils.XmiResourceManager.loadProject(XmiResourceManager.java:121)
+	at org.talend.repository.localprovider.model.LocalRepositoryFactory.readProject(LocalRepositoryFactory.java:1090)
+	at org.talend.repository.localprovider.model.LocalRepositoryFactory.readProject(LocalRepositoryFactory.java:1048)
+	at org.talend.repository.localprovider.model.LocalRepositoryFactory.readProjects(LocalRepositoryFactory.java:1037)
+	at org.talend.repository.localprovider.model.LocalRepositoryFactory.readProject(LocalRepositoryFactory.java:1114)
+	at org.talend.core.repository.model.ProxyRepositoryFactory.readProject(ProxyRepositoryFactory.java:655)
+	at org.talend.repository.ui.login.LoginHelper$4.run(LoginHelper.java:637)
+	at org.talend.repository.ui.login.LoginHelper$4.run(LoginHelper.java:1)
+	at org.talend.repository.ui.dialog.OverTimePopupDialogTask$1.call(OverTimePopupDialogTask.java:76)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.xml.sax.SAXParseExceptionpublicId: platform:/resource/CICD_TALEND/talend.project; systemId: platform:/resource/CICD_TALEND/talend.project; lineNumber: 3; columnNumber: 2; Le contenu des éléments doit inclure un balisage ou des caractères au format correct.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1438)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.startOfMarkup(XMLDocumentFragmentScannerImpl.java:2637)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2735)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:118)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:327)
+	at org.eclipse.emf.ecore.xmi.impl.XMLLoadImpl.load(XMLLoadImpl.java:175)
+	at org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl.doLoad(XMLResourceImpl.java:261)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1518)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1297)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoad(ResourceSetImpl.java:259)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:274)
+	... 12 more
+
+!ENTRY org.talend.platform.logging 4 0 2018-10-27 22:24:30.636
+!MESSAGE 2018-10-27 22:24:30,636 ERROR org.talend.commons.exception.CommonExceptionHandler  - org.xml.sax.SAXParseExceptionpublicId: platform:/resource/CICD_TALEND/talend.project; systemId: platform:/resource/CICD_TALEND/talend.project; lineNumber: 3; columnNumber: 2; Le contenu des éléments doit inclure un balisage ou des caractères au format correct.
+
+!STACK 0
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl$1DiagnosticWrappedException: org.xml.sax.SAXParseExceptionpublicId: platform:/resource/CICD_TALEND/talend.project; systemId: platform:/resource/CICD_TALEND/talend.project; lineNumber: 3; columnNumber: 2; Le contenu des éléments doit inclure un balisage ou des caractères au format correct.
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.handleDemandLoadException(ResourceSetImpl.java:319)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:278)
+	at org.talend.core.repository.utils.TalendResourceSet.getResource(TalendResourceSet.java:112)
+	at org.talend.core.repository.utils.XmiResourceManager.loadProject(XmiResourceManager.java:121)
+	at org.talend.repository.localprovider.model.LocalRepositoryFactory.readProject(LocalRepositoryFactory.java:1090)
+	at org.talend.repository.localprovider.model.LocalRepositoryFactory.readProject(LocalRepositoryFactory.java:1048)
+	at org.talend.repository.localprovider.model.LocalRepositoryFactory.readProjects(LocalRepositoryFactory.java:1037)
+	at org.talend.repository.localprovider.model.LocalRepositoryFactory.readProject(LocalRepositoryFactory.java:1114)
+	at org.talend.core.repository.model.ProxyRepositoryFactory.readProject(ProxyRepositoryFactory.java:655)
+	at org.talend.repository.ui.login.LoginHelper$4.run(LoginHelper.java:637)
+	at org.talend.repository.ui.login.LoginHelper$4.run(LoginHelper.java:1)
+	at org.talend.repository.ui.dialog.OverTimePopupDialogTask$1.call(OverTimePopupDialogTask.java:76)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.xml.sax.SAXParseExceptionpublicId: platform:/resource/CICD_TALEND/talend.project; systemId: platform:/resource/CICD_TALEND/talend.project; lineNumber: 3; columnNumber: 2; Le contenu des éléments doit inclure un balisage ou des caractères au format correct.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1438)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.startOfMarkup(XMLDocumentFragmentScannerImpl.java:2637)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2735)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:118)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:327)
+	at org.eclipse.emf.ecore.xmi.impl.XMLLoadImpl.load(XMLLoadImpl.java:175)
+	at org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl.doLoad(XMLResourceImpl.java:261)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1518)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1297)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoad(ResourceSetImpl.java:259)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:274)
+	... 12 more
