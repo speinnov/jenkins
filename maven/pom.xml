@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"> 
+    <modelVersion>4.0.0</modelVersion> 
+    <groupId>org.talend</groupId> 
+    <artifactId>buildsources</artifactId> 
+    <version>0.1</version> 
+    <packaging>pom</packaging> 
+    
+    
+    <properties>
+        <!-- Required. Commandline application workspace and Studio path, only for local(script) mode -->
+        <!--commandline.workspace>${basedir}/commandline_workspace</commandline.workspace-->
+        <!--product.path>/Applications/CommandLine641</product.path-->
+        <!-- Optional. Specify target directory where generated sources will be stored -->
+        <!--projectsTargetDirectory>${basedir}/projectSources</projectsTargetDirectory-->
+        <!-- Optional. Specify version for the artifact to be built. Can be set for each Job independentl-->
+        <!--launcherPath>/Applications/CommandLine641/plugins/org.eclipse.equinox.launcher_1.3.0.v20140415-2008.jar</launcherPath-->
+        <!--deploy.version>1.1.0-SNAPSHOT</deploy.version-->
+    </properties>
+    
+    <build> 
+      <plugins> 
+      <plugin> 
+        <groupId>org.talend</groupId> 
+        <artifactId>ci.builder</artifactId> 
+        <version>6.4.1</version> 
+        <executions> 
+          <execution> 
+            <phase>generate-sources</phase> 
+              <goals> 
+                <goal>generate</goal> 
+              </goals> 
+          </execution> 
+        </executions> 
+      </plugin> 
+      </plugins> 
+    </build> 
+</project>
