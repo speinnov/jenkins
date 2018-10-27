@@ -9,6 +9,7 @@
     
     
     <properties>
+        <!--  not nedded for remote option -->
         <!-- Required. Commandline application workspace and Studio path, only for local(script) mode -->
         <!--commandline.workspace>${basedir}/commandline_workspace</commandline.workspace-->
         <!--product.path>/Applications/CommandLine641</product.path-->
@@ -29,11 +30,29 @@
           <execution> 
             <phase>generate-sources</phase> 
               <goals> 
+                  <!-- server mode -->
                 <goal>generate</goal> 
               </goals> 
+              <configuration>
+              </configuration>
           </execution> 
         </executions> 
       </plugin> 
       </plugins> 
     </build> 
+    
+<pluginRepositories>
+    <!-- everything through Maven Central Proxy -->
+        <pluginRepository>
+            <id>central</id>
+            <name>Central</name>
+            <url>http://macbookprobigdata.local:8181/nexus/content/repositories/central/</url>
+        </pluginRepository>
+        <pluginRepository>
+            <id>thirdparty</id>
+            <name>thirdparty</name>
+            <url>http://macbookprobigdata.local:8181/nexus/content/repositories/thirdparty/</url>
+        </pluginRepository>
+</pluginRepositories>
+            
 </project>
