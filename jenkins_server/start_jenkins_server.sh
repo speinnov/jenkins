@@ -1,0 +1,3 @@
+export JENKINS_PORT=9090_
+export JENKINS_HOME=/opt/JENKINS_HOME_
+java -DJENKINS_HOME=$JENKINS_HOME -jar jenkins.war  --httpPort=$JENKINS_PORT

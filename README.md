@@ -1,2 +1,2 @@
-# jenkins
-cicd test with talend
+# jenkins & Talend
+How install talend on cicd chain
