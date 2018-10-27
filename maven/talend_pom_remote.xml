@@ -10,13 +10,13 @@
     
     <properties>
         <!-- Required. Commandline application workspace and Studio path, only for local(script) mode -->
-        <commandline.workspace>${basedir}/commandline_workspace</commandline.workspace>
-        <product.path>/Applications/CommandLine641</product.path>
+        <!--commandline.workspace>${basedir}/commandline_workspace</commandline.workspace-->
+        <!--product.path>/Applications/CommandLine641</product.path-->
         <!-- Optional. Specify target directory where generated sources will be stored -->
-        <projectsTargetDirectory>${basedir}/projectSources</projectsTargetDirectory>
+        <!--projectsTargetDirectory>${basedir}/projectSources</projectsTargetDirectory-->
         <!-- Optional. Specify version for the artifact to be built. Can be set for each Job independentl-->
-        <launcherPath>/Applications/CommandLine641/plugins/org.eclipse.equinox.launcher_1.3.0.v20140415-2008.jar</launcherPath>
-        <deploy.version>1.1.0-SNAPSHOT</deploy.version>
+        <!--launcherPath>/Applications/CommandLine641/plugins/org.eclipse.equinox.launcher_1.3.0.v20140415-2008.jar</launcherPath-->
+        <!--deploy.version>1.1.0-SNAPSHOT</deploy.version-->
     </properties>
     
     <build> 
