@@ -74,6 +74,7 @@
               <enabled>true</enabled>
           </snapshots>
         </repository>
+      </repositories> 
     </profile>
     <profile>
         <id>talend_ci</id>
@@ -83,6 +84,7 @@
           <value/>
         </property>
       </activation>
+      <repositories>
         <repository>
           <id>central</id>
           <name>central</name>
