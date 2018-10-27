@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_UHfrMMcfEeielcxlqJAv5A" comment="connectionComment" label="connectionLabel" dataPackage="_UHfrMccfEeielcxlqJAv5A"/>
+  <TalendMetadata:GenericPackage xmi:id="_UHfrMccfEeielcxlqJAv5A" dataManager="_UHfrMMcfEeielcxlqJAv5A">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_UHfrMscfEeielcxlqJAv5A" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_UHfrM8cfEeielcxlqJAv5A" name="id" id="115" label="id" length="-1" precision="-1" sourceType="" talendType="id_Integer">
+        <initialValue xmi:id="_UHfrNMcfEeielcxlqJAv5A"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_UHfrNccfEeielcxlqJAv5A" name="client" id="116" label="client" length="-1" precision="-1" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_UHfrNscfEeielcxlqJAv5A"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_UHfrN8cfEeielcxlqJAv5A" name="ville" id="117" label="ville" length="-1" precision="-1" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_UHfrOMcfEeielcxlqJAv5A"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_UHfrOccfEeielcxlqJAv5A" name="presta_id" id="118" label="presta_id" length="-1" precision="-1" sourceType="" talendType="id_Integer">
+        <initialValue xmi:id="_UHfrOscfEeielcxlqJAv5A"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_UHfrO8cfEeielcxlqJAv5A" name="presta_name" id="119" label="presta_name" length="-1" precision="-1" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_UHfrPMcfEeielcxlqJAv5A"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_UHfrPccfEeielcxlqJAv5A" name="project" id="120" label="project" length="-1" precision="-1" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_UHfrPscfEeielcxlqJAv5A"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_UHfrP8cfEeielcxlqJAv5A" name="datepresta" id="121" label="datepresta" length="-1" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_UHfrQMcfEeielcxlqJAv5A"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_UHfrQccfEeielcxlqJAv5A" name="timestamp" id="122" label="timestamp" length="-1" precision="-1" sourceType="" talendType="id_String" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;">
+        <initialValue xmi:id="_UHfrQscfEeielcxlqJAv5A"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

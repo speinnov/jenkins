@@ -1,0 +1,2 @@
+this is a dummy file caus the p2 build is remiving tthe folder if no file is in it.
+This must be a PDE build bug.

@@ -1,0 +1,1134 @@
+!SESSION 2018-10-25 00:20:32.765 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_92
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=fr
+Framework arguments:  -VM /Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home -keyring /Users/hadoop/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -data /Users/hadoop/github_repo/jenkins -VM /Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home -keyring /Users/hadoop/.eclipse_keyring -showlocation
+
+!ENTRY org.talend.designer.esb.bpm.ui 4 0 2018-10-25 00:20:34.331
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.talend.designer.esb.bpm.ui [20]
+  Unresolved requirement: Require-Bundle: org.talend.repository.services
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.compare.win32 4 0 2018-10-25 00:20:34.352
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.compare.win32 [1004]
+  Unresolved requirement: Require-Capability: eclipse.platform; filter:="(osgi.os=win32)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.core.net 1 0 2018-10-25 00:20:38.629
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.emf.ecore 2 0 2018-10-25 00:20:39.301
+!MESSAGE Both 'org.talend.model.tac' and 'org.talend.model.tac' register a package for 'http://www.talend.org/tac/esb'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2018-10-25 00:20:39.303
+!MESSAGE Both 'org.talend.model' and 'org.talend.model' register a package for 'platform:/resource/org.talend.model/model/TalendFile.xsd'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2018-10-25 00:20:39.306
+!MESSAGE Both 'org.talend.designer.sparkmap' and 'org.talend.designer.sparkmap' register an extension parser for 'sparkmap'
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:20:41.011
+!MESSAGE 2018-10-25 00:20:41,009 INFO  org.talend.repository.ui.login.LoginProjectPage  - validate updatesite...
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:09.735
+!MESSAGE 2018-10-25 00:21:09,735 INFO  org.talend.datacleansing.core.CleansingActivator  - Starting Talend Data Profiler platform.
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.570
+!MESSAGE 2018-10-25 00:21:38,570 INFO  org.talend.components.api.service.internal.osgi.DefinitionRegistryOsgi  - Registered the component: installer$$DataPrep(org.talend.components.dataprep.DataPrepFamilyDefinition)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.571
+!MESSAGE 2018-10-25 00:21:38,571 INFO  org.talend.components.api.service.common.DefinitionRegistry  - Talend Definition registered :tDatasetInput
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.572
+!MESSAGE 2018-10-25 00:21:38,571 INFO  org.talend.components.api.service.common.DefinitionRegistry  - Talend Definition registered :tDatasetOutput
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.572
+!MESSAGE 2018-10-25 00:21:38,572 INFO  org.talend.components.api.service.common.DefinitionRegistry  - Talend Definition registered :DataPrepRun
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.586
+!MESSAGE 2018-10-25 00:21:38,585 INFO  org.talend.components.api.service.internal.osgi.DefinitionRegistryOsgi  - Registered the component: installer$$Snowflake(org.talend.components.snowflake.SnowflakeFamilyDefinition)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.586
+!MESSAGE 2018-10-25 00:21:38,586 INFO  org.talend.components.api.service.common.DefinitionRegistry  - Talend Definition registered :tSnowflakeConnection
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.586
+!MESSAGE 2018-10-25 00:21:38,586 INFO  org.talend.components.api.service.common.DefinitionRegistry  - Talend Definition registered :tSnowflakeInput
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.587
+!MESSAGE 2018-10-25 00:21:38,587 INFO  org.talend.components.api.service.common.DefinitionRegistry  - Talend Definition registered :tSnowflakeOutput
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.587
+!MESSAGE 2018-10-25 00:21:38,587 INFO  org.talend.components.api.service.common.DefinitionRegistry  - Talend Definition registered :tSnowflakeClose
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.587
+!MESSAGE 2018-10-25 00:21:38,587 INFO  org.talend.components.api.service.common.DefinitionRegistry  - Talend Definition registered :snowflake
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.587
+!MESSAGE 2018-10-25 00:21:38,587 INFO  org.talend.components.api.service.common.DefinitionRegistry  - Talend Definition registered :snowflake.edit
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.588
+!MESSAGE 2018-10-25 00:21:38,588 INFO  org.talend.components.api.service.common.DefinitionRegistry  - Talend Definition registered :snowflake.table
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.601
+!MESSAGE 2018-10-25 00:21:38,600 INFO  org.talend.components.api.service.internal.osgi.DefinitionRegistryOsgi  - Registered the component: installer$$DataStewardship(org.talend.components.datastewardship.TdsFamilyDefinition)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.601
+!MESSAGE 2018-10-25 00:21:38,601 INFO  org.talend.components.api.service.common.DefinitionRegistry  - Talend Definition registered :tDataStewardshipTaskInput
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.601
+!MESSAGE 2018-10-25 00:21:38,601 INFO  org.talend.components.api.service.common.DefinitionRegistry  - Talend Definition registered :tDataStewardshipTaskOutput
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.601
+!MESSAGE 2018-10-25 00:21:38,601 INFO  org.talend.components.api.service.common.DefinitionRegistry  - Talend Definition registered :tDataStewardshipTaskDelete
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.601
+!MESSAGE 2018-10-25 00:21:38,601 INFO  org.talend.components.api.service.common.DefinitionRegistry  - Talend Definition registered :datastewardship
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.617
+!MESSAGE 2018-10-25 00:21:38,617 INFO  org.talend.components.api.service.internal.osgi.DefinitionRegistryOsgi  - Registered the component: installer$$Azure Storage(org.talend.components.azurestorage.AzureStorageFamilyDefinition)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.618
+!MESSAGE 2018-10-25 00:21:38,618 INFO  org.talend.components.api.service.common.DefinitionRegistry  - Talend Definition registered :tAzureStorageConnection
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.618
+!MESSAGE 2018-10-25 00:21:38,618 INFO  org.talend.components.api.service.common.DefinitionRegistry  - Talend Definition registered :tAzureStorageContainerExist
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.618
+!MESSAGE 2018-10-25 00:21:38,618 INFO  org.talend.components.api.service.common.DefinitionRegistry  - Talend Definition registered :tAzureStorageContainerCreate
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.618
+!MESSAGE 2018-10-25 00:21:38,618 INFO  org.talend.components.api.service.common.DefinitionRegistry  - Talend Definition registered :tAzureStorageContainerDelete
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.619
+!MESSAGE 2018-10-25 00:21:38,618 INFO  org.talend.components.api.service.common.DefinitionRegistry  - Talend Definition registered :tAzureStorageContainerList
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.619
+!MESSAGE 2018-10-25 00:21:38,619 INFO  org.talend.components.api.service.common.DefinitionRegistry  - Talend Definition registered :tAzureStorageList
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.619
+!MESSAGE 2018-10-25 00:21:38,619 INFO  org.talend.components.api.service.common.DefinitionRegistry  - Talend Definition registered :tAzureStorageDelete
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.619
+!MESSAGE 2018-10-25 00:21:38,619 INFO  org.talend.components.api.service.common.DefinitionRegistry  - Talend Definition registered :tAzureStorageGet
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.619
+!MESSAGE 2018-10-25 00:21:38,619 INFO  org.talend.components.api.service.common.DefinitionRegistry  - Talend Definition registered :tAzureStoragePut
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.619
+!MESSAGE 2018-10-25 00:21:38,619 INFO  org.talend.components.api.service.common.DefinitionRegistry  - Talend Definition registered :tAzureStorageInputTable
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.620
+!MESSAGE 2018-10-25 00:21:38,620 INFO  org.talend.components.api.service.common.DefinitionRegistry  - Talend Definition registered :tAzureStorageOutputTable
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.620
+!MESSAGE 2018-10-25 00:21:38,620 INFO  org.talend.components.api.service.common.DefinitionRegistry  - Talend Definition registered :tAzureStorageQueueCreate
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.620
+!MESSAGE 2018-10-25 00:21:38,620 INFO  org.talend.components.api.service.common.DefinitionRegistry  - Talend Definition registered :tAzureStorageQueueDelete
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.620
+!MESSAGE 2018-10-25 00:21:38,620 INFO  org.talend.components.api.service.common.DefinitionRegistry  - Talend Definition registered :tAzureStorageQueueList
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.620
+!MESSAGE 2018-10-25 00:21:38,620 INFO  org.talend.components.api.service.common.DefinitionRegistry  - Talend Definition registered :tAzureStorageQueueInput
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.620
+!MESSAGE 2018-10-25 00:21:38,620 INFO  org.talend.components.api.service.common.DefinitionRegistry  - Talend Definition registered :tAzureStorageQueueOutput
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.621
+!MESSAGE 2018-10-25 00:21:38,621 INFO  org.talend.components.api.service.common.DefinitionRegistry  - Talend Definition registered :tAzureStorageQueuePurge
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.621
+!MESSAGE 2018-10-25 00:21:38,621 INFO  org.talend.components.api.service.common.DefinitionRegistry  - Talend Definition registered :tAzureStorageQueueInputLoop
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.621
+!MESSAGE 2018-10-25 00:21:38,621 INFO  org.talend.components.api.service.common.DefinitionRegistry  - Talend Definition registered :azurestorage
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.621
+!MESSAGE 2018-10-25 00:21:38,621 INFO  org.talend.components.api.service.common.DefinitionRegistry  - Talend Definition registered :azurestorage.edit
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.630
+!MESSAGE 2018-10-25 00:21:38,630 INFO  org.talend.components.api.service.internal.osgi.DefinitionRegistryOsgi  - Registered the component: installer$$Marketo(org.talend.components.marketo.MarketoFamilyDefinition)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.630
+!MESSAGE 2018-10-25 00:21:38,630 INFO  org.talend.components.api.service.common.DefinitionRegistry  - Talend Definition registered :tMarketoConnection
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.631
+!MESSAGE 2018-10-25 00:21:38,630 INFO  org.talend.components.api.service.common.DefinitionRegistry  - Talend Definition registered :tMarketoInput
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.631
+!MESSAGE 2018-10-25 00:21:38,631 INFO  org.talend.components.api.service.common.DefinitionRegistry  - Talend Definition registered :tMarketoListOperation
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.631
+!MESSAGE 2018-10-25 00:21:38,631 INFO  org.talend.components.api.service.common.DefinitionRegistry  - Talend Definition registered :tMarketoOutput
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.631
+!MESSAGE 2018-10-25 00:21:38,631 INFO  org.talend.components.api.service.common.DefinitionRegistry  - Talend Definition registered :tMarketoBulkExec
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.631
+!MESSAGE 2018-10-25 00:21:38,631 INFO  org.talend.components.api.service.common.DefinitionRegistry  - Talend Definition registered :marketo
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.631
+!MESSAGE 2018-10-25 00:21:38,631 INFO  org.talend.components.api.service.common.DefinitionRegistry  - Talend Definition registered :marketo.edit
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.647
+!MESSAGE 2018-10-25 00:21:38,647 INFO  org.talend.components.api.service.internal.osgi.DefinitionRegistryOsgi  - Registered the component: installer$$Salesforce(org.talend.components.salesforce.SalesforceFamilyDefinition)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.648
+!MESSAGE 2018-10-25 00:21:38,647 INFO  org.talend.components.api.service.common.DefinitionRegistry  - Talend Definition registered :tSalesforceBulkExec
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.648
+!MESSAGE 2018-10-25 00:21:38,648 INFO  org.talend.components.api.service.common.DefinitionRegistry  - Talend Definition registered :tSalesforceConnection
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.648
+!MESSAGE 2018-10-25 00:21:38,648 INFO  org.talend.components.api.service.common.DefinitionRegistry  - Talend Definition registered :tSalesforceGetDeleted
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.648
+!MESSAGE 2018-10-25 00:21:38,648 INFO  org.talend.components.api.service.common.DefinitionRegistry  - Talend Definition registered :tSalesforceGetServerTimestamp
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.648
+!MESSAGE 2018-10-25 00:21:38,648 INFO  org.talend.components.api.service.common.DefinitionRegistry  - Talend Definition registered :tSalesforceGetUpdated
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.648
+!MESSAGE 2018-10-25 00:21:38,648 INFO  org.talend.components.api.service.common.DefinitionRegistry  - Talend Definition registered :tSalesforceInput
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.649
+!MESSAGE 2018-10-25 00:21:38,649 INFO  org.talend.components.api.service.common.DefinitionRegistry  - Talend Definition registered :tSalesforceOutput
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.649
+!MESSAGE 2018-10-25 00:21:38,649 INFO  org.talend.components.api.service.common.DefinitionRegistry  - Talend Definition registered :tSalesforceOutputBulk
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.649
+!MESSAGE 2018-10-25 00:21:38,649 INFO  org.talend.components.api.service.common.DefinitionRegistry  - Talend Definition registered :tSalesforceOutputBulkExec
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.650
+!MESSAGE 2018-10-25 00:21:38,649 INFO  org.talend.components.api.service.common.DefinitionRegistry  - Talend Definition registered :salesforce.edit
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.650
+!MESSAGE 2018-10-25 00:21:38,650 INFO  org.talend.components.api.service.common.DefinitionRegistry  - Talend Definition registered :salesforce
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.650
+!MESSAGE 2018-10-25 00:21:38,650 INFO  org.talend.components.api.service.common.DefinitionRegistry  - Talend Definition registered :salesforce.module
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.650
+!MESSAGE 2018-10-25 00:21:38,650 INFO  org.talend.components.api.service.common.DefinitionRegistry  - Talend Definition registered :SalesforceDatastore
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.650
+!MESSAGE 2018-10-25 00:21:38,650 INFO  org.talend.components.api.service.common.DefinitionRegistry  - Talend Definition registered :SalesforceDataset
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.651
+!MESSAGE 2018-10-25 00:21:38,650 INFO  org.talend.components.api.service.common.DefinitionRegistry  - Talend Definition registered :DataPrepSalesforceInput
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.656
+!MESSAGE 2018-10-25 00:21:38,655 INFO  org.talend.components.api.service.internal.osgi.DefinitionRegistryOsgi  - Registered the component: installer$$HadoopCluster(org.talend.components.hadoopcluster.HadoopClusterFamilyDefinition)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.656
+!MESSAGE 2018-10-25 00:21:38,656 INFO  org.talend.components.api.service.common.DefinitionRegistry  - Talend Definition registered :HadoopClusterConfigurationInput
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.665
+!MESSAGE 2018-10-25 00:21:38,665 INFO  org.talend.components.api.service.internal.osgi.DefinitionRegistryOsgi  - Registered the component: installer$$Jira(org.talend.components.jira.JiraFamilyDefinition)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.665
+!MESSAGE 2018-10-25 00:21:38,665 INFO  org.talend.components.api.service.common.DefinitionRegistry  - Talend Definition registered :tJIRAInput
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.665
+!MESSAGE 2018-10-25 00:21:38,665 INFO  org.talend.components.api.service.common.DefinitionRegistry  - Talend Definition registered :tJIRAOutput
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.670
+!MESSAGE 2018-10-25 00:21:38,670 INFO  org.talend.components.api.service.internal.osgi.DefinitionRegistryOsgi  - Registered the component: installer$$NetSuite(org.talend.components.netsuite.NetSuiteFamilyDefinition)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.670
+!MESSAGE 2018-10-25 00:21:38,670 INFO  org.talend.components.api.service.common.DefinitionRegistry  - Talend Definition registered :tNetsuiteConnection
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.670
+!MESSAGE 2018-10-25 00:21:38,670 INFO  org.talend.components.api.service.common.DefinitionRegistry  - Talend Definition registered :tNetsuiteInput
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.671
+!MESSAGE 2018-10-25 00:21:38,670 INFO  org.talend.components.api.service.common.DefinitionRegistry  - Talend Definition registered :tNetsuiteOutput
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.674
+!MESSAGE 2018-10-25 00:21:38,674 INFO  org.talend.components.api.service.internal.osgi.DefinitionRegistryOsgi  - Registered the component: installer$$Splunk(org.talend.components.splunk.SplunkFamilyDefinition)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.674
+!MESSAGE 2018-10-25 00:21:38,674 INFO  org.talend.components.api.service.common.DefinitionRegistry  - Talend Definition registered :tSplunkEventCollector
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:38.679
+!MESSAGE 2018-10-25 00:21:38,679 INFO  org.talend.components.api.service.context.osgi.GlobalContextOsgi  - Activated i18n messages (org.talend.components.api.service.i18n.osgi.I18nMessageProviderOsgi@9cc34d).
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:41.953
+!MESSAGE 2018-10-25 00:21:41,953 INFO  org.eclipse.m2e.core.internal.lifecyclemapping.LifecycleMappingFactory  - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: .Java:.Java:6.4.1 @ /Users/hadoop/github_repo/jenkins/.Java/pom.xml.
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:42.325
+!MESSAGE 2018-10-25 00:21:42,325 INFO  org.eclipse.m2e.core.internal.lifecyclemapping.LifecycleMappingFactory  - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: .Java:.Java:6.4.1 @ /Users/hadoop/github_repo/jenkins/.Java/pom.xml.
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:42.326
+!MESSAGE 2018-10-25 00:21:42,326 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /.Java/src/main/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:42.328
+!MESSAGE 2018-10-25 00:21:42,328 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /.Java/src/main/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:42.345
+!MESSAGE 2018-10-25 00:21:42,345 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding source folder /.Java/src/test/java
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:42.345
+!MESSAGE 2018-10-25 00:21:42,345 INFO  org.eclipse.m2e.jdt.internal.AbstractJavaProjectConfigurator  - Adding resource folder /.Java/src/test/resources
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:43.420
+!MESSAGE 2018-10-25 00:21:43,420 INFO  org.eclipse.m2e.core.internal.lifecyclemapping.LifecycleMappingFactory  - Using NULL lifecycle mapping for MavenProject: org.talend.master.cicd_talend:code.Master:6.4.1 @ /Users/hadoop/github_repo/jenkins/.Java/pom.xml.
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:45.150
+!MESSAGE 2018-10-25 00:21:45,150 INFO  org.eclipse.m2e.core.internal.lifecyclemapping.LifecycleMappingFactory  - Using NULL lifecycle mapping for MavenProject: org.talend.master.cicd_talend:code.Master:6.4.1 @ /Users/hadoop/github_repo/jenkins/.Java/pom.xml.
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:45.748
+!MESSAGE 2018-10-25 00:21:45,748 INFO  org.eclipse.m2e.core.internal.lifecyclemapping.LifecycleMappingFactory  - Using NULL lifecycle mapping for MavenProject: org.talend.master.cicd_talend:code.Master:6.4.1 @ /Users/hadoop/github_repo/jenkins/.Java/pom.xml.
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:46.660
+!MESSAGE 2018-10-25 00:21:46,659 INFO  org.talend.core.repository.model.ProxyRepositoryFactory  - asdsa@fgtg.com connecté à CICD_TALEND
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:46.873
+!MESSAGE 2018-10-25 00:21:46,873 INFO  org.eclipse.m2e.core.internal.lifecyclemapping.LifecycleMappingFactory  - Using NULL lifecycle mapping for MavenProject: org.talend.master.cicd_talend:code.Master:6.4.1 @ /Users/hadoop/github_repo/jenkins/.Java/pom.xml.
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:21:52.191
+!MESSAGE 2018-10-25 00:21:52,191 INFO  org.talend.core.repository.logintask.ReadOnlyProjectConfirm  - ReadOnly confirm
+
+
+!ENTRY org.eclipse.egit.core 4 0 2018-10-25 00:22:21.858
+!MESSAGE Failed finding RepositoryMapping
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/.JETEmitters/SkeletonUpdateCache' is not local.
+	at org.eclipse.core.internal.resources.Resource.checkLocal(Resource.java:353)
+	at org.eclipse.core.internal.resources.Resource.checkAccessibleAndLocal(Resource.java:222)
+	at org.eclipse.core.internal.resources.Resource.getSessionProperty(Resource.java:1274)
+	at org.eclipse.egit.core.project.GitProjectData.getRepositoryMapping(GitProjectData.java:532)
+	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:381)
+	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
+	at org.eclipse.egit.core.Activator$IgnoreDerivedResources$1.visit(Activator.java:710)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:69)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:80)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:49)
+	at org.eclipse.egit.core.Activator$IgnoreDerivedResources.resourceChanged(Activator.java:694)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:378)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1498)
+	at org.eclipse.core.internal.resources.File.create(File.java:175)
+	at org.eclipse.core.internal.resources.File.create(File.java:188)
+	at org.talend.designer.codegen.model.JetSkeletonManager.getSerializationFilePath(JetSkeletonManager.java:139)
+	at org.talend.designer.codegen.model.JetSkeletonManager.deserializeAlreadyChecked(JetSkeletonManager.java:165)
+	at org.talend.designer.codegen.model.JetSkeletonManager.load(JetSkeletonManager.java:87)
+	at org.talend.designer.codegen.model.JetSkeletonManager.updateSkeletonPersistenceData(JetSkeletonManager.java:199)
+	at org.talend.designer.codegen.model.CodeGeneratorEmittersPoolFactory.initializeEmittersPool(CodeGeneratorEmittersPoolFactory.java:594)
+	at org.talend.designer.codegen.model.CodeGeneratorEmittersPoolFactory.access$7(CodeGeneratorEmittersPoolFactory.java:570)
+	at org.talend.designer.codegen.model.CodeGeneratorEmittersPoolFactory$JobRunnable.doRun(CodeGeneratorEmittersPoolFactory.java:214)
+	at org.talend.designer.codegen.model.CodeGeneratorEmittersPoolFactory$JobRunnable.run(CodeGeneratorEmittersPoolFactory.java:129)
+!SUBENTRY 1 org.eclipse.core.resources 4 369 2018-10-25 00:22:21.859
+!MESSAGE Resource '/.JETEmitters/SkeletonUpdateCache' is not local.
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:22:46.952
+!MESSAGE 2018-10-25 00:22:46,952 INFO  org.talend.repository.view.remote.InitializeLockStatusLoginTask  - Initialize lock status
+
+
+!ENTRY org.eclipse.ui 2 2 2018-10-25 00:22:59.241
+!MESSAGE Invalid preference category path: org.talend.designer.runtime.visualization.internal.ui.JavaMonitorPreferencePage (bundle: org.talend.designer.runtime.visualization.tools, page: org.talend.designer.runtime.visualization.internal.tools.ToolsPreferencePage)
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:23:17.773
+!MESSAGE 2018-10-25 00:23:17,773 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for jaas.jar is not available (mvn:org.talend.libraries/jaas/6.0.0-SNAPSHOT/jar)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:23:18.805
+!MESSAGE 2018-10-25 00:23:18,805 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for jersey-multipart-1.19.jar is not available (mvn:org.talend.libraries/jersey-multipart-1.19/6.2.0/jar)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:23:18.806
+!MESSAGE 2018-10-25 00:23:18,806 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for maprfs-0.1.jar is not available (mvn:org.talend.libraries/maprfs-0.1/6.0.0/jar)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:23:18.806
+!MESSAGE 2018-10-25 00:23:18,806 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for spark-streaming-flume-assembly_2.11-2.1.0.jar is not available (mvn:org.talend.libraries/spark-streaming-flume-assembly_2.11-2.1.0/6.0.0/jar)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:23:18.806
+!MESSAGE 2018-10-25 00:23:18,806 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for flume-ng-core-1.5.2.2.6.0.3-8.jar is not available (mvn:org.talend.libraries/flume-ng-core-1.5.2.2.6.0.3-8/6.4.0/jar)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:23:18.807
+!MESSAGE 2018-10-25 00:23:18,806 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for spark-streaming-flume-assembly_2.11-2.0.0.jar is not available (mvn:org.talend.libraries/spark-streaming-flume-assembly_2.11-2.0.0/6.0.0/jar)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:23:18.807
+!MESSAGE 2018-10-25 00:23:18,807 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for kite-data-mapreduce-1.0.0-cdh5.7.0.jar is not available (mvn:org.talend.libraries/kite-data-mapreduce-1.0.0-cdh5.7.0/6.0.0/jar)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:23:18.807
+!MESSAGE 2018-10-25 00:23:18,807 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for neo4j-io-2.3.4.jar is not available (mvn:org.talend.libraries/neo4j-io-2.3.4/6.2.0/jar)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:23:18.807
+!MESSAGE 2018-10-25 00:23:18,807 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for neo4j-graph-algo-2.3.4.jar is not available (mvn:org.talend.libraries/neo4j-graph-algo-2.3.4/6.2.0/jar)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:23:18.807
+!MESSAGE 2018-10-25 00:23:18,807 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for neo4j-primitive-collections-2.3.4.jar is not available (mvn:org.talend.libraries/neo4j-primitive-collections-2.3.4/6.2.0/jar)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:23:18.807
+!MESSAGE 2018-10-25 00:23:18,807 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for concurrentlinkedhashmap-lru-1.4.2.jar is not available (mvn:org.talend.libraries/concurrentlinkedhashmap-lru-1.4.2/6.2.0/jar)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:23:18.808
+!MESSAGE 2018-10-25 00:23:18,807 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for talend-bigdata-launcher-1.0.0-20150922.jar is not available (mvn:org.talend.libraries/talend-bigdata-launcher-1.0.0-20150922/6.0.0/jar)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:23:18.808
+!MESSAGE 2018-10-25 00:23:18,808 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for graphframes-0.4.0-spark2.1-s_2.11.jar is not available (mvn:org.talend.libraries/graphframes-0.4.0-spark2.1-s_2.11/6.0.0/jar)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:23:18.808
+!MESSAGE 2018-10-25 00:23:18,808 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for kite-hadoop-compatibility-1.0.0-cdh5.7.0.jar is not available (mvn:org.talend.libraries/kite-hadoop-compatibility-1.0.0-cdh5.7.0/6.0.0/jar)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:23:18.808
+!MESSAGE 2018-10-25 00:23:18,808 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for maprdb-5.2.0-mapr.jar is not available (mvn:org.talend.libraries/maprdb-5.2.0-mapr/6.3.0/jar)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:23:18.808
+!MESSAGE 2018-10-25 00:23:18,808 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for neo4j-cypher-frontend-2.3-2.3.4.jar is not available (mvn:org.talend.libraries/neo4j-cypher-frontend-2.3-2.3.4/6.2.0/jar)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:23:18.808
+!MESSAGE 2018-10-25 00:23:18,808 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for parquet-pig-bundle-1.2.5-cdh5.0.4.jar is not available (mvn:org.talend.libraries/parquet-pig-bundle-1.2.5-cdh5.0.4/6.0.0/jar)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:23:18.809
+!MESSAGE 2018-10-25 00:23:18,808 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for spark-streaming-kafka-0-8_2.11-2.1.0.cloudera1.jar is not available (mvn:org.talend.libraries/spark-streaming-kafka-0-8_2.11-2.1.0.cloudera1/6.0.0/jar)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:23:18.809
+!MESSAGE 2018-10-25 00:23:18,809 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for hadoop-archives-2.7.3-amzn-2.jar is not available (mvn:org.talend.libraries/hadoop-archives-2.7.3-amzn-2/6.0.0/jar)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:23:18.809
+!MESSAGE 2018-10-25 00:23:18,809 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for neo4j-graph-matching-2.3.4.jar is not available (mvn:org.talend.libraries/neo4j-graph-matching-2.3.4/6.2.0/jar)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:23:18.809
+!MESSAGE 2018-10-25 00:23:18,809 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for mapr-hbase-5.1.0-mapr.jar is not available (mvn:org.talend.libraries/mapr-hbase-5.1.0-mapr/6.2.0/jar)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:23:18.810
+!MESSAGE 2018-10-25 00:23:18,809 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for spring-data-neo4j-3.4.4.RELEASE.jar is not available (mvn:org.talend.libraries/spring-data-neo4j-3.4.4.RELEASE/6.2.0/jar)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:23:18.810
+!MESSAGE 2018-10-25 00:23:18,810 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for kite-data-core-1.0.0-cdh5.7.0.jar is not available (mvn:org.talend.libraries/kite-data-core-1.0.0-cdh5.7.0/6.0.0/jar)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:23:18.810
+!MESSAGE 2018-10-25 00:23:18,810 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for hive-hbase-handler-2.1.1-amzn-0.jar is not available (mvn:org.talend.libraries/hive-hbase-handler-2.1.1-amzn-0/6.0.0/jar)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:23:18.810
+!MESSAGE 2018-10-25 00:23:18,810 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for parquet-hadoop-bundle-1.2.5-cdh5.0.4.jar is not available (mvn:org.talend.libraries/parquet-hadoop-bundle-1.2.5-cdh5.0.4/6.0.0/jar)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:23:18.810
+!MESSAGE 2018-10-25 00:23:18,810 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for spark-mllib_2.11-2.0.0.cloudera1.jar is not available (mvn:org.talend.libraries/spark-mllib_2.11-2.0.0.cloudera1/6.0.0/jar)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:23:18.811
+!MESSAGE 2018-10-25 00:23:18,810 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for spark-streaming-kafka-assembly_2.10-1.6.3.2.6.0.3-8.jar is not available (mvn:org.talend.libraries/spark-streaming-kafka-assembly_2.10-1.6.3.2.6.0.3-8/6.4.0/jar)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:23:18.811
+!MESSAGE 2018-10-25 00:23:18,811 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for maprfs-5.1.0-mapr.jar is not available (mvn:org.talend.libraries/maprfs-5.1.0-mapr/6.2.0/jar)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:23:18.811
+!MESSAGE 2018-10-25 00:23:18,811 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for jersey-servlet-1.19.jar is not available (mvn:org.talend.libraries/jersey-servlet-1.19/6.2.0/jar)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:23:18.811
+!MESSAGE 2018-10-25 00:23:18,811 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for hadoop-ant-2.7.3-amzn-2.jar is not available (mvn:org.talend.libraries/hadoop-ant-2.7.3-amzn-2/6.0.0/jar)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:23:18.812
+!MESSAGE 2018-10-25 00:23:18,811 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for mapr-streams-5.2.0-mapr.jar is not available (mvn:org.talend.libraries/mapr-streams-5.2.0-mapr/6.3.0/jar)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:23:18.812
+!MESSAGE 2018-10-25 00:23:18,812 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for spring-data-neo4j-rest-3.4.4.RELEASE.jar is not available (mvn:org.talend.libraries/spring-data-neo4j-rest-3.4.4.RELEASE/6.2.0/jar)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:23:18.812
+!MESSAGE 2018-10-25 00:23:18,812 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for spark-streaming-kafka-0-10_2.11-2.0.0.cloudera1.jar is not available (mvn:org.talend.libraries/spark-streaming-kafka-0-10_2.11-2.0.0.cloudera1/6.0.0/jar)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:23:18.812
+!MESSAGE 2018-10-25 00:23:18,812 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for mapr-streams-5.1.0-mapr.jar is not available (mvn:org.talend.libraries/mapr-streams-5.1.0-mapr/6.3.0/jar)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:23:18.813
+!MESSAGE 2018-10-25 00:23:18,812 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for neo4j-lucene-index-2.3.4.jar is not available (mvn:org.talend.libraries/neo4j-lucene-index-2.3.4/6.2.0/jar)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:23:18.813
+!MESSAGE 2018-10-25 00:23:18,813 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for jackson-core-2.1.0.jar is not available (mvn:org.talend.libraries/jackson-core-2.1.0/6.1.0/jar)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:23:18.813
+!MESSAGE 2018-10-25 00:23:18,813 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for flume-ng-sdk-1.5.2.2.6.0.3-8.jar is not available (mvn:org.talend.libraries/flume-ng-sdk-1.5.2.2.6.0.3-8/6.4.0/jar)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:23:18.813
+!MESSAGE 2018-10-25 00:23:18,813 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for neo4j-kernel-2.3.4.jar is not available (mvn:org.talend.libraries/neo4j-kernel-2.3.4/6.2.0/jar)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:23:18.813
+!MESSAGE 2018-10-25 00:23:18,813 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for jackson-databind-2.1.0.jar is not available (mvn:org.talend.libraries/jackson-databind-2.1.0/6.1.0/jar)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:23:18.813
+!MESSAGE 2018-10-25 00:23:18,813 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for neo4j-function-2.3.4.jar is not available (mvn:org.talend.libraries/neo4j-function-2.3.4/6.2.0/jar)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:23:18.814
+!MESSAGE 2018-10-25 00:23:18,813 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for neo4j-cypher-2.3.4.jar is not available (mvn:org.talend.libraries/neo4j-cypher-2.3.4/6.2.0/jar)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:23:18.814
+!MESSAGE 2018-10-25 00:23:18,814 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for neo4j-unsafe-2.3.4.jar is not available (mvn:org.talend.libraries/neo4j-unsafe-2.3.4/6.2.0/jar)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:23:18.814
+!MESSAGE 2018-10-25 00:23:18,814 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for maprfs-5.0.0-mapr.jar is not available (mvn:org.talend.libraries/maprfs-5.0.0-mapr/6.1.0/jar)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:23:18.814
+!MESSAGE 2018-10-25 00:23:18,814 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for spark-streaming-flume-assembly_2.10-1.6.3.2.6.0.3-8.jar is not available (mvn:org.talend.libraries/spark-streaming-flume-assembly_2.10-1.6.3.2.6.0.3-8/6.4.0/jar)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:23:18.814
+!MESSAGE 2018-10-25 00:23:18,814 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for amazon-kinesis-client-1.6.0.jar is not available (mvn:org.talend.libraries/amazon-kinesis-client-1.6.0/6.0.0/jar)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:23:18.814
+!MESSAGE 2018-10-25 00:23:18,814 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for maprfs-0.20.2-2.1.2.jar is not available (mvn:org.talend.libraries/maprfs-0.20.2-2.1.2/6.0.0/jar)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:23:18.815
+!MESSAGE 2018-10-25 00:23:18,815 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for hive-hbase-handler-2.1.0-amzn-0.jar is not available (mvn:org.talend.libraries/hive-hbase-handler-2.1.0-amzn-0/6.0.0/jar)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:23:18.815
+!MESSAGE 2018-10-25 00:23:18,815 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for maprfs-5.2.0-mapr.jar is not available (mvn:org.talend.libraries/maprfs-5.2.0-mapr/6.2.0/jar)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:23:18.815
+!MESSAGE 2018-10-25 00:23:18,815 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for maprfs-4.1.0-mapr.jar is not available (mvn:org.talend.libraries/maprfs-4.1.0-mapr/6.0.0/jar)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:23:18.815
+!MESSAGE 2018-10-25 00:23:18,815 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for spark-streaming-kinesis-asl-assembly_2.11-2.1.0.jar is not available (mvn:org.talend.libraries/spark-streaming-kinesis-asl-assembly_2.11-2.1.0/6.0.0/jar)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:23:18.816
+!MESSAGE 2018-10-25 00:23:18,815 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for shield-2.3.3.jar is not available (mvn:org.talend.libraries/shield-2.3.3/6.0.0/jar)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:23:18.816
+!MESSAGE 2018-10-25 00:23:18,816 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for scala-library-2.11.7.jar is not available (mvn:org.talend.libraries/scala-library-2.11.7/6.2.0/jar)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:23:18.816
+!MESSAGE 2018-10-25 00:23:18,816 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for elasticsearch-shield-1.3.2.jar is not available (mvn:org.talend.libraries/elasticsearch-shield-1.3.2/6.0.0/jar)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:23:18.816
+!MESSAGE 2018-10-25 00:23:18,816 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for jackson-annotations-2.1.0.jar is not available (mvn:org.talend.libraries/jackson-annotations-2.1.0/6.1.0/jar)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:23:18.816
+!MESSAGE 2018-10-25 00:23:18,816 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for jersey-server-1.19.jar is not available (mvn:org.talend.libraries/jersey-server-1.19/6.2.0/jar)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:23:18.816
+!MESSAGE 2018-10-25 00:23:18,816 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for neo4j-cypher-compiler-1.9_2.11-2.0.5.jar is not available (mvn:org.talend.libraries/neo4j-cypher-compiler-1.9_2.11-2.0.5/6.2.0/jar)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:23:18.817
+!MESSAGE 2018-10-25 00:23:18,817 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for neo4j-cypher-compiler-2.2_2.11-2.2.9.jar is not available (mvn:org.talend.libraries/neo4j-cypher-compiler-2.2_2.11-2.2.9/6.2.0/jar)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:23:18.817
+!MESSAGE 2018-10-25 00:23:18,817 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for neo4j-logging-2.3.4.jar is not available (mvn:org.talend.libraries/neo4j-logging-2.3.4/6.2.0/jar)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:23:18.817
+!MESSAGE 2018-10-25 00:23:18,817 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for neo4j-cypher-compiler-2.3-2.3.4.jar is not available (mvn:org.talend.libraries/neo4j-cypher-compiler-2.3-2.3.4/6.2.0/jar)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:23:18.817
+!MESSAGE 2018-10-25 00:23:18,817 INFO  org.talend.commons.exception.CommonExceptionHandler  - The download URL for maprfs-jni-0.20.2-2.1.2.jar is not available (mvn:org.talend.libraries/maprfs-jni-0.20.2-2.1.2/6.0.0/jar)
+
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:23:22.324
+!MESSAGE 2018-10-25 00:23:22,324 INFO  org.talend.dq.indicators.definitions.DefinitionHandler  - Indicator default definitions correctly saved in platform:/resource/CICD_TALEND/TDQ_Libraries/.Talend.definition
+
+
+!ENTRY org.talend.platform.logging 4 0 2018-10-25 00:24:05.170
+!MESSAGE 2018-10-25 00:24:05,169 ERROR org.talend.commons.exception.CommonExceptionHandler  - 
+
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.m2e.core.MavenPlugin.getMaven(MavenPlugin.java:42)
+	at org.talend.designer.maven.utils.PomUtil.getArtifactPath(PomUtil.java:378)
+	at org.talend.librariesmanager.maven.ArtifactsDeployer.deleteOldEntity(ArtifactsDeployer.java:184)
+	at org.talend.librariesmanager.maven.ArtifactsDeployer.installToRemote(ArtifactsDeployer.java:170)
+	at org.talend.librariesmanager.maven.ShareLibrareisHelper.shareLibs(ShareLibrareisHelper.java:204)
+	at org.talend.librariesmanager.ui.startup.ShareLibsJob.run(ShareLibsJob.java:47)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.talend.platform.logging 4 0 2018-10-25 00:24:05.172
+!MESSAGE 2018-10-25 00:24:05,171 ERROR org.talend.commons.exception.CommonExceptionHandler  - 
+
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.m2e.core.MavenPlugin.getMaven(MavenPlugin.java:42)
+	at org.talend.designer.maven.utils.PomUtil.getArtifactPath(PomUtil.java:378)
+	at org.talend.librariesmanager.maven.ArtifactsDeployer.deleteOldEntity(ArtifactsDeployer.java:184)
+	at org.talend.librariesmanager.maven.ArtifactsDeployer.installToRemote(ArtifactsDeployer.java:170)
+	at org.talend.librariesmanager.maven.ShareLibrareisHelper.shareLibs(ShareLibrareisHelper.java:203)
+	at org.talend.librariesmanager.ui.startup.ShareLibsJob.run(ShareLibsJob.java:47)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.talend.platform.logging 4 0 2018-10-25 00:24:05.172
+!MESSAGE 2018-10-25 00:24:05,172 ERROR org.talend.commons.exception.CommonExceptionHandler  - 
+
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.m2e.core.MavenPlugin.getMaven(MavenPlugin.java:42)
+	at org.talend.designer.maven.utils.PomUtil.getArtifactPath(PomUtil.java:378)
+	at org.talend.librariesmanager.maven.ArtifactsDeployer.deleteOldEntity(ArtifactsDeployer.java:184)
+	at org.talend.librariesmanager.maven.ArtifactsDeployer.installToRemote(ArtifactsDeployer.java:170)
+	at org.talend.librariesmanager.maven.ShareLibrareisHelper.shareLibs(ShareLibrareisHelper.java:204)
+	at org.talend.librariesmanager.ui.startup.ShareLibsJob.run(ShareLibsJob.java:47)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.talend.platform.logging 4 0 2018-10-25 00:24:05.172
+!MESSAGE 2018-10-25 00:24:05,172 ERROR org.talend.commons.exception.CommonExceptionHandler  - 
+
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.m2e.core.MavenPlugin.getMaven(MavenPlugin.java:42)
+	at org.talend.designer.maven.utils.PomUtil.getArtifactPath(PomUtil.java:378)
+	at org.talend.librariesmanager.maven.ArtifactsDeployer.deleteOldEntity(ArtifactsDeployer.java:184)
+	at org.talend.librariesmanager.maven.ArtifactsDeployer.installToRemote(ArtifactsDeployer.java:170)
+	at org.talend.librariesmanager.maven.ShareLibrareisHelper.shareLibs(ShareLibrareisHelper.java:203)
+	at org.talend.librariesmanager.ui.startup.ShareLibsJob.run(ShareLibsJob.java:47)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.talend.platform.logging 4 0 2018-10-25 00:24:05.173
+!MESSAGE 2018-10-25 00:24:05,172 ERROR org.talend.commons.exception.CommonExceptionHandler  - 
+
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.m2e.core.MavenPlugin.getMaven(MavenPlugin.java:42)
+	at org.talend.designer.maven.utils.PomUtil.getArtifactPath(PomUtil.java:378)
+	at org.talend.librariesmanager.maven.ArtifactsDeployer.deleteOldEntity(ArtifactsDeployer.java:184)
+	at org.talend.librariesmanager.maven.ArtifactsDeployer.installToRemote(ArtifactsDeployer.java:170)
+	at org.talend.librariesmanager.maven.ShareLibrareisHelper.shareLibs(ShareLibrareisHelper.java:204)
+	at org.talend.librariesmanager.ui.startup.ShareLibsJob.run(ShareLibsJob.java:47)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.talend.platform.logging 4 0 2018-10-25 00:24:05.173
+!MESSAGE 2018-10-25 00:24:05,173 ERROR org.talend.commons.exception.CommonExceptionHandler  - 
+
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.m2e.core.MavenPlugin.getMaven(MavenPlugin.java:42)
+	at org.talend.designer.maven.utils.PomUtil.getArtifactPath(PomUtil.java:378)
+	at org.talend.librariesmanager.maven.ArtifactsDeployer.deleteOldEntity(ArtifactsDeployer.java:184)
+	at org.talend.librariesmanager.maven.ArtifactsDeployer.installToRemote(ArtifactsDeployer.java:170)
+	at org.talend.librariesmanager.maven.ShareLibrareisHelper.shareLibs(ShareLibrareisHelper.java:203)
+	at org.talend.librariesmanager.ui.startup.ShareLibsJob.run(ShareLibsJob.java:47)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.talend.platform.logging 4 0 2018-10-25 00:24:05.173
+!MESSAGE 2018-10-25 00:24:05,173 ERROR org.talend.commons.exception.CommonExceptionHandler  - 
+
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.m2e.core.MavenPlugin.getMaven(MavenPlugin.java:42)
+	at org.talend.designer.maven.utils.PomUtil.getArtifactPath(PomUtil.java:378)
+	at org.talend.librariesmanager.maven.ArtifactsDeployer.deleteOldEntity(ArtifactsDeployer.java:184)
+	at org.talend.librariesmanager.maven.ArtifactsDeployer.installToRemote(ArtifactsDeployer.java:170)
+	at org.talend.librariesmanager.maven.ShareLibrareisHelper.shareLibs(ShareLibrareisHelper.java:204)
+	at org.talend.librariesmanager.ui.startup.ShareLibsJob.run(ShareLibsJob.java:47)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.talend.platform.logging 4 0 2018-10-25 00:24:05.174
+!MESSAGE 2018-10-25 00:24:05,174 ERROR org.talend.commons.exception.CommonExceptionHandler  - 
+
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.m2e.core.MavenPlugin.getMaven(MavenPlugin.java:42)
+	at org.talend.designer.maven.utils.PomUtil.getArtifactPath(PomUtil.java:378)
+	at org.talend.librariesmanager.maven.ArtifactsDeployer.deleteOldEntity(ArtifactsDeployer.java:184)
+	at org.talend.librariesmanager.maven.ArtifactsDeployer.installToRemote(ArtifactsDeployer.java:170)
+	at org.talend.librariesmanager.maven.ShareLibrareisHelper.shareLibs(ShareLibrareisHelper.java:203)
+	at org.talend.librariesmanager.ui.startup.ShareLibsJob.run(ShareLibsJob.java:47)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.talend.platform.logging 4 0 2018-10-25 00:24:05.174
+!MESSAGE 2018-10-25 00:24:05,174 ERROR org.talend.commons.exception.CommonExceptionHandler  - 
+
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.m2e.core.MavenPlugin.getMaven(MavenPlugin.java:42)
+	at org.talend.designer.maven.utils.PomUtil.getArtifactPath(PomUtil.java:378)
+	at org.talend.librariesmanager.maven.ArtifactsDeployer.deleteOldEntity(ArtifactsDeployer.java:184)
+	at org.talend.librariesmanager.maven.ArtifactsDeployer.installToRemote(ArtifactsDeployer.java:170)
+	at org.talend.librariesmanager.maven.ShareLibrareisHelper.shareLibs(ShareLibrareisHelper.java:204)
+	at org.talend.librariesmanager.ui.startup.ShareLibsJob.run(ShareLibsJob.java:47)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.talend.platform.logging 4 0 2018-10-25 00:24:05.175
+!MESSAGE 2018-10-25 00:24:05,174 ERROR org.talend.commons.exception.CommonExceptionHandler  - 
+
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.m2e.core.MavenPlugin.getMaven(MavenPlugin.java:42)
+	at org.talend.designer.maven.utils.PomUtil.getArtifactPath(PomUtil.java:378)
+	at org.talend.librariesmanager.maven.ArtifactsDeployer.deleteOldEntity(ArtifactsDeployer.java:184)
+	at org.talend.librariesmanager.maven.ArtifactsDeployer.installToRemote(ArtifactsDeployer.java:170)
+	at org.talend.librariesmanager.maven.ShareLibrareisHelper.shareLibs(ShareLibrareisHelper.java:203)
+	at org.talend.librariesmanager.ui.startup.ShareLibsJob.run(ShareLibsJob.java:47)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.talend.platform.logging 4 0 2018-10-25 00:24:05.175
+!MESSAGE 2018-10-25 00:24:05,175 ERROR org.talend.commons.exception.CommonExceptionHandler  - 
+
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.m2e.core.MavenPlugin.getMaven(MavenPlugin.java:42)
+	at org.talend.designer.maven.utils.PomUtil.getArtifactPath(PomUtil.java:378)
+	at org.talend.librariesmanager.maven.ArtifactsDeployer.deleteOldEntity(ArtifactsDeployer.java:184)
+	at org.talend.librariesmanager.maven.ArtifactsDeployer.installToRemote(ArtifactsDeployer.java:170)
+	at org.talend.librariesmanager.maven.ShareLibrareisHelper.shareLibs(ShareLibrareisHelper.java:204)
+	at org.talend.librariesmanager.ui.startup.ShareLibsJob.run(ShareLibsJob.java:47)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.talend.platform.logging 4 0 2018-10-25 00:24:05.175
+!MESSAGE 2018-10-25 00:24:05,175 ERROR org.talend.commons.exception.CommonExceptionHandler  - 
+
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.m2e.core.MavenPlugin.getMaven(MavenPlugin.java:42)
+	at org.talend.designer.maven.utils.PomUtil.getArtifactPath(PomUtil.java:378)
+	at org.talend.librariesmanager.maven.ArtifactsDeployer.deleteOldEntity(ArtifactsDeployer.java:184)
+	at org.talend.librariesmanager.maven.ArtifactsDeployer.installToRemote(ArtifactsDeployer.java:170)
+	at org.talend.librariesmanager.maven.ShareLibrareisHelper.shareLibs(ShareLibrareisHelper.java:203)
+	at org.talend.librariesmanager.ui.startup.ShareLibsJob.run(ShareLibsJob.java:47)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.talend.platform.logging 4 0 2018-10-25 00:24:05.176
+!MESSAGE 2018-10-25 00:24:05,175 ERROR org.talend.commons.exception.CommonExceptionHandler  - 
+
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.m2e.core.MavenPlugin.getMaven(MavenPlugin.java:42)
+	at org.talend.designer.maven.utils.PomUtil.getArtifactPath(PomUtil.java:378)
+	at org.talend.librariesmanager.maven.ArtifactsDeployer.deleteOldEntity(ArtifactsDeployer.java:184)
+	at org.talend.librariesmanager.maven.ArtifactsDeployer.installToRemote(ArtifactsDeployer.java:170)
+	at org.talend.librariesmanager.maven.ShareLibrareisHelper.shareLibs(ShareLibrareisHelper.java:204)
+	at org.talend.librariesmanager.ui.startup.ShareLibsJob.run(ShareLibsJob.java:47)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.talend.platform.logging 4 0 2018-10-25 00:24:05.176
+!MESSAGE 2018-10-25 00:24:05,176 ERROR org.talend.commons.exception.CommonExceptionHandler  - 
+
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.m2e.core.MavenPlugin.getMaven(MavenPlugin.java:42)
+	at org.talend.designer.maven.utils.PomUtil.getArtifactPath(PomUtil.java:378)
+	at org.talend.librariesmanager.maven.ArtifactsDeployer.deleteOldEntity(ArtifactsDeployer.java:184)
+	at org.talend.librariesmanager.maven.ArtifactsDeployer.installToRemote(ArtifactsDeployer.java:170)
+	at org.talend.librariesmanager.maven.ShareLibrareisHelper.shareLibs(ShareLibrareisHelper.java:203)
+	at org.talend.librariesmanager.ui.startup.ShareLibsJob.run(ShareLibsJob.java:47)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.talend.platform.logging 4 0 2018-10-25 00:24:05.176
+!MESSAGE 2018-10-25 00:24:05,176 ERROR org.talend.commons.exception.CommonExceptionHandler  - 
+
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.m2e.core.MavenPlugin.getMaven(MavenPlugin.java:42)
+	at org.talend.designer.maven.utils.PomUtil.getArtifactPath(PomUtil.java:378)
+	at org.talend.librariesmanager.maven.ArtifactsDeployer.deleteOldEntity(ArtifactsDeployer.java:184)
+	at org.talend.librariesmanager.maven.ArtifactsDeployer.installToRemote(ArtifactsDeployer.java:170)
+	at org.talend.librariesmanager.maven.ShareLibrareisHelper.shareLibs(ShareLibrareisHelper.java:204)
+	at org.talend.librariesmanager.ui.startup.ShareLibsJob.run(ShareLibsJob.java:47)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.talend.platform.logging 4 0 2018-10-25 00:24:05.177
+!MESSAGE 2018-10-25 00:24:05,176 ERROR org.talend.commons.exception.CommonExceptionHandler  - 
+
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.m2e.core.MavenPlugin.getMaven(MavenPlugin.java:42)
+	at org.talend.designer.maven.utils.PomUtil.getArtifactPath(PomUtil.java:378)
+	at org.talend.librariesmanager.maven.ArtifactsDeployer.deleteOldEntity(ArtifactsDeployer.java:184)
+	at org.talend.librariesmanager.maven.ArtifactsDeployer.installToRemote(ArtifactsDeployer.java:170)
+	at org.talend.librariesmanager.maven.ShareLibrareisHelper.shareLibs(ShareLibrareisHelper.java:203)
+	at org.talend.librariesmanager.ui.startup.ShareLibsJob.run(ShareLibsJob.java:47)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.talend.platform.logging 4 0 2018-10-25 00:24:05.177
+!MESSAGE 2018-10-25 00:24:05,177 ERROR org.talend.commons.exception.CommonExceptionHandler  - 
+
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.m2e.core.MavenPlugin.getMaven(MavenPlugin.java:42)
+	at org.talend.designer.maven.utils.PomUtil.getArtifactPath(PomUtil.java:378)
+	at org.talend.librariesmanager.maven.ArtifactsDeployer.deleteOldEntity(ArtifactsDeployer.java:184)
+	at org.talend.librariesmanager.maven.ArtifactsDeployer.installToRemote(ArtifactsDeployer.java:170)
+	at org.talend.librariesmanager.maven.ShareLibrareisHelper.shareLibs(ShareLibrareisHelper.java:204)
+	at org.talend.librariesmanager.ui.startup.ShareLibsJob.run(ShareLibsJob.java:47)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.talend.platform.logging 4 0 2018-10-25 00:24:05.177
+!MESSAGE 2018-10-25 00:24:05,177 ERROR org.talend.commons.exception.CommonExceptionHandler  - 
+
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.m2e.core.MavenPlugin.getMaven(MavenPlugin.java:42)
+	at org.talend.designer.maven.utils.PomUtil.getArtifactPath(PomUtil.java:378)
+	at org.talend.librariesmanager.maven.ArtifactsDeployer.deleteOldEntity(ArtifactsDeployer.java:184)
+	at org.talend.librariesmanager.maven.ArtifactsDeployer.installToRemote(ArtifactsDeployer.java:170)
+	at org.talend.librariesmanager.maven.ShareLibrareisHelper.shareLibs(ShareLibrareisHelper.java:203)
+	at org.talend.librariesmanager.ui.startup.ShareLibsJob.run(ShareLibsJob.java:47)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.talend.platform.logging 4 0 2018-10-25 00:24:05.178
+!MESSAGE 2018-10-25 00:24:05,177 ERROR org.talend.commons.exception.CommonExceptionHandler  - 
+
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.m2e.core.MavenPlugin.getMaven(MavenPlugin.java:42)
+	at org.talend.designer.maven.utils.PomUtil.getArtifactPath(PomUtil.java:378)
+	at org.talend.librariesmanager.maven.ArtifactsDeployer.deleteOldEntity(ArtifactsDeployer.java:184)
+	at org.talend.librariesmanager.maven.ArtifactsDeployer.installToRemote(ArtifactsDeployer.java:170)
+	at org.talend.librariesmanager.maven.ShareLibrareisHelper.shareLibs(ShareLibrareisHelper.java:204)
+	at org.talend.librariesmanager.ui.startup.ShareLibsJob.run(ShareLibsJob.java:47)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.talend.platform.logging 4 0 2018-10-25 00:24:05.178
+!MESSAGE 2018-10-25 00:24:05,178 ERROR org.talend.commons.exception.CommonExceptionHandler  - 
+
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.m2e.core.MavenPlugin.getMaven(MavenPlugin.java:42)
+	at org.talend.designer.maven.utils.PomUtil.getArtifactPath(PomUtil.java:378)
+	at org.talend.librariesmanager.maven.ArtifactsDeployer.deleteOldEntity(ArtifactsDeployer.java:184)
+	at org.talend.librariesmanager.maven.ArtifactsDeployer.installToRemote(ArtifactsDeployer.java:170)
+	at org.talend.librariesmanager.maven.ShareLibrareisHelper.shareLibs(ShareLibrareisHelper.java:203)
+	at org.talend.librariesmanager.ui.startup.ShareLibsJob.run(ShareLibsJob.java:47)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.talend.platform.logging 4 0 2018-10-25 00:24:05.178
+!MESSAGE 2018-10-25 00:24:05,178 ERROR org.talend.commons.exception.CommonExceptionHandler  - 
+
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.m2e.core.MavenPlugin.getMaven(MavenPlugin.java:42)
+	at org.talend.designer.maven.utils.PomUtil.getArtifactPath(PomUtil.java:378)
+	at org.talend.librariesmanager.maven.ArtifactsDeployer.deleteOldEntity(ArtifactsDeployer.java:184)
+	at org.talend.librariesmanager.maven.ArtifactsDeployer.installToRemote(ArtifactsDeployer.java:170)
+	at org.talend.librariesmanager.maven.ShareLibrareisHelper.shareLibs(ShareLibrareisHelper.java:204)
+	at org.talend.librariesmanager.ui.startup.ShareLibsJob.run(ShareLibsJob.java:47)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.talend.platform.logging 4 0 2018-10-25 00:24:05.179
+!MESSAGE 2018-10-25 00:24:05,179 ERROR org.talend.commons.exception.CommonExceptionHandler  - 
+
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.m2e.core.MavenPlugin.getMaven(MavenPlugin.java:42)
+	at org.talend.designer.maven.utils.PomUtil.getArtifactPath(PomUtil.java:378)
+	at org.talend.librariesmanager.maven.ArtifactsDeployer.deleteOldEntity(ArtifactsDeployer.java:184)
+	at org.talend.librariesmanager.maven.ArtifactsDeployer.installToRemote(ArtifactsDeployer.java:170)
+	at org.talend.librariesmanager.maven.ShareLibrareisHelper.shareLibs(ShareLibrareisHelper.java:203)
+	at org.talend.librariesmanager.ui.startup.ShareLibsJob.run(ShareLibsJob.java:47)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.talend.platform.logging 4 0 2018-10-25 00:24:05.179
+!MESSAGE 2018-10-25 00:24:05,179 ERROR org.talend.commons.exception.CommonExceptionHandler  - 
+
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.m2e.core.MavenPlugin.getMaven(MavenPlugin.java:42)
+	at org.talend.designer.maven.utils.PomUtil.getArtifactPath(PomUtil.java:378)
+	at org.talend.librariesmanager.maven.ArtifactsDeployer.deleteOldEntity(ArtifactsDeployer.java:184)
+	at org.talend.librariesmanager.maven.ArtifactsDeployer.installToRemote(ArtifactsDeployer.java:170)
+	at org.talend.librariesmanager.maven.ShareLibrareisHelper.shareLibs(ShareLibrareisHelper.java:204)
+	at org.talend.librariesmanager.ui.startup.ShareLibsJob.run(ShareLibsJob.java:47)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.talend.platform.logging 4 0 2018-10-25 00:24:05.180
+!MESSAGE 2018-10-25 00:24:05,179 ERROR org.talend.commons.exception.CommonExceptionHandler  - 
+
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.m2e.core.MavenPlugin.getMaven(MavenPlugin.java:42)
+	at org.talend.designer.maven.utils.PomUtil.getArtifactPath(PomUtil.java:378)
+	at org.talend.librariesmanager.maven.ArtifactsDeployer.deleteOldEntity(ArtifactsDeployer.java:184)
+	at org.talend.librariesmanager.maven.ArtifactsDeployer.installToRemote(ArtifactsDeployer.java:170)
+	at org.talend.librariesmanager.maven.ShareLibrareisHelper.shareLibs(ShareLibrareisHelper.java:203)
+	at org.talend.librariesmanager.ui.startup.ShareLibsJob.run(ShareLibsJob.java:47)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.talend.platform.logging 4 0 2018-10-25 00:24:05.180
+!MESSAGE 2018-10-25 00:24:05,180 ERROR org.talend.commons.exception.CommonExceptionHandler  - 
+
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.m2e.core.MavenPlugin.getMaven(MavenPlugin.java:42)
+	at org.talend.designer.maven.utils.PomUtil.getArtifactPath(PomUtil.java:378)
+	at org.talend.librariesmanager.maven.ArtifactsDeployer.deleteOldEntity(ArtifactsDeployer.java:184)
+	at org.talend.librariesmanager.maven.ArtifactsDeployer.installToRemote(ArtifactsDeployer.java:170)
+	at org.talend.librariesmanager.maven.ShareLibrareisHelper.shareLibs(ShareLibrareisHelper.java:204)
+	at org.talend.librariesmanager.ui.startup.ShareLibsJob.run(ShareLibsJob.java:47)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.talend.platform.logging 4 0 2018-10-25 00:24:05.180
+!MESSAGE 2018-10-25 00:24:05,180 ERROR org.talend.commons.exception.CommonExceptionHandler  - 
+
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.m2e.core.MavenPlugin.getMaven(MavenPlugin.java:42)
+	at org.talend.designer.maven.utils.PomUtil.getArtifactPath(PomUtil.java:378)
+	at org.talend.librariesmanager.maven.ArtifactsDeployer.deleteOldEntity(ArtifactsDeployer.java:184)
+	at org.talend.librariesmanager.maven.ArtifactsDeployer.installToRemote(ArtifactsDeployer.java:170)
+	at org.talend.librariesmanager.maven.ShareLibrareisHelper.shareLibs(ShareLibrareisHelper.java:203)
+	at org.talend.librariesmanager.ui.startup.ShareLibsJob.run(ShareLibsJob.java:47)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.talend.platform.logging 4 0 2018-10-25 00:24:05.180
+!MESSAGE 2018-10-25 00:24:05,180 ERROR org.talend.commons.exception.CommonExceptionHandler  - 
+
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.m2e.core.MavenPlugin.getMaven(MavenPlugin.java:42)
+	at org.talend.designer.maven.utils.PomUtil.getArtifactPath(PomUtil.java:378)
+	at org.talend.librariesmanager.maven.ArtifactsDeployer.deleteOldEntity(ArtifactsDeployer.java:184)
+	at org.talend.librariesmanager.maven.ArtifactsDeployer.installToRemote(ArtifactsDeployer.java:170)
+	at org.talend.librariesmanager.maven.ShareLibrareisHelper.shareLibs(ShareLibrareisHelper.java:204)
+	at org.talend.librariesmanager.ui.startup.ShareLibsJob.run(ShareLibsJob.java:47)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.talend.platform.logging 4 0 2018-10-25 00:24:05.181
+!MESSAGE 2018-10-25 00:24:05,181 ERROR org.talend.commons.exception.CommonExceptionHandler  - 
+
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.m2e.core.MavenPlugin.getMaven(MavenPlugin.java:42)
+	at org.talend.designer.maven.utils.PomUtil.getArtifactPath(PomUtil.java:378)
+	at org.talend.librariesmanager.maven.ArtifactsDeployer.deleteOldEntity(ArtifactsDeployer.java:184)
+	at org.talend.librariesmanager.maven.ArtifactsDeployer.installToRemote(ArtifactsDeployer.java:170)
+	at org.talend.librariesmanager.maven.ShareLibrareisHelper.shareLibs(ShareLibrareisHelper.java:203)
+	at org.talend.librariesmanager.ui.startup.ShareLibsJob.run(ShareLibsJob.java:47)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.talend.platform.logging 4 0 2018-10-25 00:24:05.181
+!MESSAGE 2018-10-25 00:24:05,181 ERROR org.talend.commons.exception.CommonExceptionHandler  - 
+
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.m2e.core.MavenPlugin.getMaven(MavenPlugin.java:42)
+	at org.talend.designer.maven.utils.PomUtil.getArtifactPath(PomUtil.java:378)
+	at org.talend.librariesmanager.maven.ArtifactsDeployer.deleteOldEntity(ArtifactsDeployer.java:184)
+	at org.talend.librariesmanager.maven.ArtifactsDeployer.installToRemote(ArtifactsDeployer.java:170)
+	at org.talend.librariesmanager.maven.ShareLibrareisHelper.shareLibs(ShareLibrareisHelper.java:204)
+	at org.talend.librariesmanager.ui.startup.ShareLibsJob.run(ShareLibsJob.java:47)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.talend.designer.codegen 4 0 2018-10-25 00:24:05.551
+!MESSAGE Exception durant l'initialisation
+!STACK 0
+java.lang.IllegalStateException
+	at org.eclipse.core.runtime.Platform.getPluginRegistry(Platform.java:763)
+	at org.eclipse.core.runtime.Platform.getPlugin(Platform.java:737)
+	at org.talend.designer.codegen.config.JetBean.getFullTemplatePath(JetBean.java:396)
+	at org.talend.designer.codegen.config.TalendJetEmitter.<init>(TalendJetEmitter.java:113)
+	at org.talend.designer.codegen.model.CodeGeneratorEmittersPoolFactory.synchronizedComponent(CodeGeneratorEmittersPoolFactory.java:638)
+	at org.talend.designer.codegen.model.CodeGeneratorEmittersPoolFactory.initializeEmittersPool(CodeGeneratorEmittersPoolFactory.java:619)
+	at org.talend.designer.codegen.model.CodeGeneratorEmittersPoolFactory.access$7(CodeGeneratorEmittersPoolFactory.java:570)
+	at org.talend.designer.codegen.model.CodeGeneratorEmittersPoolFactory$JobRunnable.doRun(CodeGeneratorEmittersPoolFactory.java:214)
+	at org.talend.designer.codegen.model.CodeGeneratorEmittersPoolFactory$JobRunnable.run(CodeGeneratorEmittersPoolFactory.java:129)
+!SESSION 2018-10-25 00:58:01.775 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_92
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=fr
+Framework arguments:  -VM /Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home -keyring /Users/hadoop/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -VM /Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home -keyring /Users/hadoop/.eclipse_keyring -showlocation
+
+!ENTRY org.talend.designer.esb.bpm.ui 4 0 2018-10-25 00:58:03.029
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.talend.designer.esb.bpm.ui [20]
+  Unresolved requirement: Require-Bundle: org.talend.repository.services
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.compare.win32 4 0 2018-10-25 00:58:03.049
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.compare.win32 [1004]
+  Unresolved requirement: Require-Capability: eclipse.platform; filter:="(osgi.os=win32)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1561)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.core.resources 2 10035 2018-10-25 00:58:06.684
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.core.net 1 0 2018-10-25 00:58:07.432
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.emf.ecore 2 0 2018-10-25 00:58:08.905
+!MESSAGE Both 'org.talend.model.tac' and 'org.talend.model.tac' register a package for 'http://www.talend.org/tac/esb'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2018-10-25 00:58:08.906
+!MESSAGE Both 'org.talend.model' and 'org.talend.model' register a package for 'platform:/resource/org.talend.model/model/TalendFile.xsd'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2018-10-25 00:58:08.910
+!MESSAGE Both 'org.talend.designer.sparkmap' and 'org.talend.designer.sparkmap' register an extension parser for 'sparkmap'
+
+!ENTRY org.talend.platform.logging 1 0 2018-10-25 00:58:11.074
+!MESSAGE 2018-10-25 00:58:11,072 INFO  org.talend.repository.ui.login.LoginProjectPage  - validate updatesite...
+

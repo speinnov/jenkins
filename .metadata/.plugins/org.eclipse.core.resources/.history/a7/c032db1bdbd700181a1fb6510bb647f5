@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Project xmi:id="_G4CPodfbEei4s9Xq_ErbBg" label="CICD_TALEND" description="" language="java" technicalLabel="CICD_TALEND" local="true" author="_G4KygNfbEei4s9Xq_ErbBg"/>
+  <TalendProperties:User xmi:id="_G4KygNfbEei4s9Xq_ErbBg" login="asdsa@fgtg.com" password="D41D8CD98F00B204E9800998ECF8427E"/>
+</xmi:XMI>
