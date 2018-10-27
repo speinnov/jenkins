@@ -29,11 +29,34 @@
           <execution> 
             <phase>generate-sources</phase> 
               <goals> 
-                <goal>generate</goal> 
+                  <!-- local(script) mode -->
+                  <goal>local-generate</goal>
+              
               </goals> 
+              <configuration>
+                        <!-- Optional. Specify CommandLine user -->
+                        <commandlineUser>jobbuilder@talend.com</commandlineUser>
+                        <!-- Optional. Jvm Parameters for local(script) mode -->
+                        <!-- <jvmArguments>-ea -Xms512m -Xmx1300m -XX:+CMSClassUnloadingEnabled -XX:MinHeapFreeRatio=10 -XX:MaxHeapFreeRatio=20 -XX:+HeapDumpOnOutOfMemoryError</jvmArguments> -->
+                        <!-- Optional. Parameter used to filter on specific Job status (TEST, DEV, PROD, etc)  -->
+                        <!-- <itemFilter>(status=TEST)or(status=PROD)or(status="")</itemFilter> -->
+                    </configuration>
           </execution> 
         </executions> 
       </plugin> 
       </plugins> 
     </build> 
+    <pluginRepositories>
+    <!-- everything through Maven Central Proxy -->
+        <pluginRepository>
+            <id>central</id>
+            <name>Central</name>
+            <url>http://macbookprobigdata.local:8181/nexus/content/repositories/central/</url>
+        </pluginRepository>
+        <pluginRepository>
+            <id>thirdparty</id>
+            <name>thirdparty</name>
+            <url>http://macbookprobigdata.local:8181/nexus/content/repositories/thirdparty/</url>
+        </pluginRepository>
+</pluginRepositories>
 </project>
