@@ -7,26 +7,7 @@
     <version>0.1</version> 
     <packaging>pom</packaging> 
     
-    <distributionManagement>
-  <snapshotRepository>
-      <id>talend-snapshots</id>
-      <name>plugins-snapshot</name>
-      <url>http://localhost:8181/nexus/content/repositories/talend-snapshots/</url>
-    </snapshotRepository>
-    <repository>
-      <id>talend-releases</id>
-      <name>plugins-release</name>
-      <url>http://localhost:8181/nexus/content/repositories/talend-releases/</url>
-    </repository>
-  </distributionManagement>
 
-<scm>
-    <connection>scm:git:https://github.com/speinnov/jenkins.git</connection>
-    <developerConnection>scm:git:https://github.com/speinnov/jenkins.git</developerConnection>
-    <tag>HEAD</tag>
-    <url>http://github.com/speinnov/jenkins</url>
-  </scm>
-    
     <properties>
         <!-- Required. Commandline application workspace and Studio path, only for local(script) mode -->
         <!--commandline.workspace>${basedir}/commandline_workspace</commandline.workspace-->
@@ -59,24 +40,7 @@
       </plugins> 
     </build> 
     
-<repositories>
-    <repository>
-      <releases>
-        <enabled>false</enabled>
-        <updatePolicy>always</updatePolicy>
-        <checksumPolicy>warn</checksumPolicy>
-      </releases>
-      <snapshots>
-        <enabled>true</enabled>
-        <updatePolicy>never</updatePolicy>
-        <checksumPolicy>fail</checksumPolicy>
-      </snapshots>
-      <id>central</id>
-      <name>maven-central</name>
-      <url>http://macbookprobigdata.local:8181/nexus/content/repositories/maven-central/</url>
-      <layout>default</layout>
-    </repository>
-  </repositories>
+
       
 <pluginRepositories>
     <!-- everything through Maven Central Proxy -->
