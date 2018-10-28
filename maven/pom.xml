@@ -52,8 +52,8 @@
         <updatePolicy>never</updatePolicy>
         <checksumPolicy>fail</checksumPolicy>
       </snapshots>
-      <id>codehausSnapshots</id>
-      <name>Codehaus Snapshots</name>
+      <id>central</id>
+      <name>maven-central</name>
       <url>http://macbookprobigdata.local:8181/nexus/content/repositories/maven-central/</url>
       <layout>default</layout>
     </repository>
