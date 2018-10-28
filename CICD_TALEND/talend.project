@@ -97,6 +97,7 @@
       <relatedItems xmi:id="_Xz89mdqhEeioZdyB7ReNPw" id="StringHandling" version="Latest" type="routine"/>
       <relatedItems xmi:id="_Xz89mtqhEeioZdyB7ReNPw" id="TalendDate" version="Latest" type="routine"/>
       <relatedItems xmi:id="_Xz89m9qhEeioZdyB7ReNPw" id="Mathematical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_eWTjwNsDEeiRp-3ar03VpQ" id="_SJUpgNsDEeiRp-3ar03VpQ" version="Latest" type="job"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_XBTFENsDEeiRp-3ar03VpQ">
       <baseItem xmi:id="_XBTFEdsDEeiRp-3ar03VpQ" id="_SJUpgNsDEeiRp-3ar03VpQ" version="1.0" type="job"/>
