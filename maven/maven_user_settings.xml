@@ -16,6 +16,12 @@
             <password>Talend123</password>
             <id>talend-snapshots</id>
           </server>
+           <!-- credentials to access the repositories holding external jars --> 
+          <server>
+            <username>admin</username>
+            <password>Talend123</password>
+            <id>nexus-repository</id>
+          </server>
           <!-- credentials to access the repositories holding external jars -->  
           <server>
             <username>admin</username>
