@@ -10,15 +10,27 @@
   <modules>
     <module>CICD_TALEND</module>
   </modules>
-  
-  <distributionManagement>
-	   <snapshotRepository>
-	      <id>nexus-snapshots</id>
-	      <url>http://localhost:8181/nexus/content/repositories/talend-snapshots</url>
-	   </snapshotRepository>
-     
-     <!-- add to maven project on the studio -->
-	</distributionManagement>
+   <!-- add to maven project on the studio -->
+ <distributionManagement>
+  <snapshotRepository>
+      <id>talend-snapshots</id>
+      <name>plugins-snapshot</name>
+      <url>http://localhost:8181/nexus/content/repositories/talend-snapshots</url>
+    </snapshotRepository>
+    <releaseRepository>
+      <id>talend-releases</id>
+      <name>plugins-release</name>
+      <url>http://localhost:8181/nexus/content/repositories/talend-releases</url>
+    </releaseRepository>
+  </distributionManagement>
+<!-- SCM control version -->
+<scm>
+    <connection>scm:git:https://github.com/speinnov/jenkins.git</connection>
+    <developerConnection>scm:git:https://github.com/speinnov/jenkins.git</developerConnection>
+    <tag>HEAD</tag>
+    <url>scm:git:https://github.com/speinnov/jenkins.git</url>
+  </scm>
+	
   <!-- disable the existing, default mapping -->
   <build>
     <pluginManagement>
