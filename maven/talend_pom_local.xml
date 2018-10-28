@@ -47,7 +47,8 @@
       </plugin> 
       </plugins> 
     </build> 
-        <repositories>
+        
+    <repositories>
     <repository>
       <releases>
         <enabled>false</enabled>
@@ -59,12 +60,13 @@
         <updatePolicy>never</updatePolicy>
         <checksumPolicy>fail</checksumPolicy>
       </snapshots>
-      <id>codehausSnapshots</id>
-      <name>Codehaus Snapshots</name>
+      <id>central</id>
+      <name>maven-central</name>
       <url>http://macbookprobigdata.local:8181/nexus/content/repositories/maven-central/</url>
       <layout>default</layout>
     </repository>
   </repositories>
+    
     <pluginRepositories>
     <!-- everything through Maven Central Proxy -->
         <pluginRepository>
