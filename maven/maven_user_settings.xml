@@ -64,12 +64,14 @@
           </server>
   </servers>
    <mirrors>
+     <!--This sends everything else to /public -->
+     <!--
   <mirror>
-   <!--This sends everything else to /public -->
-   <id>nexus</id>
+   <id>talendNexusDeploy</id>
    <mirrorOf>*</mirrorOf>
    <url>http://macbookprobigdata.local:8181/nexus/content/groups/public</url>
   </mirror>
+  -->
  </mirrors>
   <proxies/> 
 
