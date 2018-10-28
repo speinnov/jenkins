@@ -10,7 +10,8 @@
     
     <properties>
         <!-- Required. Commandline application workspace and Studio path, only for local(script) mode -->
-        <commandline.workspace>${basedir}/commandline_workspace</commandline.workspace>
+        <!--commandline.workspace>${basedir}/commandline_workspace</commandline.workspace-->
+        <commandline.workspace>${basedir}/</commandline.workspace>
         <product.path>/Applications/CommandLine641</product.path>
         <!-- Optional. Specify target directory where generated sources will be stored -->
         <projectsTargetDirectory>${basedir}/projectSources</projectsTargetDirectory>
