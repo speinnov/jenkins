@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
-  <TalendProperties:Project xmi:id="_kQFcodopEeiPdIFZNq5Cbg" label="CICD_TALEND" description="CICD_TALEND" language="java" technicalLabel="CICD_TALEND" creationDate="2018-10-25T00:57:35.091+0200" author="_kQFcotopEeiPdIFZNq5Cbg" productVersion="Talend Big Data Platform-6.4.1.20170623_1246" url="{&quot;commitLogPattern&quot;:&quot;{0}&quot;,&quot;location&quot;:&quot;https://github.com/speinnov/jenkins.git&quot;,&quot;login&quot;:&quot;speinnov&quot;,&quot;passwd&quot;:&quot;bNmX450bopPlaqE79ZhxTA==&quot;,&quot;settings&quot;:&quot;001&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DI" itemsRelationVersion="1.3">
+  <TalendProperties:Project xmi:id="_kQFcodopEeiPdIFZNq5Cbg" label="CICD_TALEND" description="CICD_TALEND" language="java" technicalLabel="CICD_TALEND" creationDate="2018-10-25T00:57:35.091+0200" author="_kQFcotopEeiPdIFZNq5Cbg" productVersion="Talend Big Data Platform-6.4.1.20170623_1246" url="{&quot;commitLogPattern&quot;:&quot;{0}&quot;,&quot;location&quot;:&quot;https://github.com/speinnov/jenkins.git&quot;,&quot;login&quot;:&quot;speinnov&quot;,&quot;passwd&quot;:&quot;bNmX450bopPlaqE79ZhxTA==&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DI" itemsRelationVersion="1.3">
     <technicalStatus xmi:id="_kUeNYNopEeiPdIFZNq5Cbg" label="development" code="DEV"/>
     <technicalStatus xmi:id="_kUeNYdopEeiPdIFZNq5Cbg" label="testing" code="TEST"/>
     <technicalStatus xmi:id="_kUeNYtopEeiPdIFZNq5Cbg" label="production" code="PROD"/>
@@ -443,4 +443,7 @@
     <migrationTask xmi:id="_kgB9hdopEeiPdIFZNq5Cbg" id="org.talend.repository.model.migration.AutoUpdateRelationsMigrationTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
   </TalendProperties:Project>
   <TalendProperties:User xmi:id="_kQFcotopEeiPdIFZNq5Cbg" login="soc@gen.com" firstName="klm" lastName="check" type="DQ" additionnalData="{}"/>
+  <TalendProperties:User xmi:id="_UfN2YdqhEeioZdyB7ReNPw" login="social@gen.com" firstName="CICD TALEND" lastName="Tester" type="DQ" additionnalData="{}"/>
+  <TalendProperties:User xmi:id="_UfN2YtqhEeioZdyB7ReNPw" login="social@gen.com" firstName="CICD TALEND" lastName="Tester" type="DQ" additionnalData="{}"/>
+  <TalendProperties:User xmi:id="_UfN2Y9qhEeioZdyB7ReNPw" login="cicd@gen.com" firstName="CICD Jenkins" lastName="talend" type="DQ" additionnalData="{}"/>
 </xmi:XMI>
