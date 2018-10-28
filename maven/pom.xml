@@ -7,6 +7,25 @@
     <version>0.1</version> 
     <packaging>pom</packaging> 
     
+    <distributionManagement>
+  <snapshotRepository>
+      <id>talend-snapshots</id>
+      <name>plugins-snapshot</name>
+      <url>http://localhost:8181/nexus/content/repositories/talend-snapshots/</url>
+    </snapshotRepository>
+    <repository>
+      <id>talend-releases</id>
+      <name>plugins-release</name>
+      <url>http://localhost:8181/nexus/content/repositories/talend-releases/</url>
+    </repository>
+  </distributionManagement>
+
+<scm>
+    <connection>scm:git:https://github.com/speinnov/jenkins.git</connection>
+    <developerConnection>scm:git:https://github.com/speinnov/jenkins.git</developerConnection>
+    <tag>HEAD</tag>
+    <url>http://github.com/speinnov/jenkins</url>
+  </scm>
     
     <properties>
         <!-- Required. Commandline application workspace and Studio path, only for local(script) mode -->
