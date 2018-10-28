@@ -7,25 +7,25 @@
   <servers>
           <!-- credentials to access the default releases/snapshots repositories -->
           <server>
-            <username>admin</username>
-            <password>Talend123</password>
+            <username>deployment</username>
+            <password>deployment123</password>
             <id>talend-releases</id>
           </server>
           <server>
-            <username>admin</username>
-            <password>Talend123</password>
+            <username>deployment</username>
+            <password>deployment123</password>
             <id>talend-snapshots</id>
           </server>
            <!-- credentials to access the repositories Nexus --> 
           <server>
-            <username>admin</username>
-            <password>Talend123</password>
+            <username>deployment</username>
+            <password>deployment123</password>
             <id>nexus-repository</id>
           </server>
          <!-- credentials to access the repositories Nexus --> 
           <server>
-            <username>admin</username>
-            <password>Talend123</password>
+            <username>deployment</username>
+            <password>deployment123</password>
             <id>nexus-releases</id>
           </server>
     
@@ -54,8 +54,8 @@
           </server>
           <server>
              <id>talendNexusDeploy</id>
-             <username>admin</username>
-             <password>Talend123</password>
+             <username>deployment</username>
+             <password>deployment123</password>
           </server>
           <server>
              <id>talendNexusLibs</id>
@@ -63,7 +63,14 @@
              <password>talend-custom-libs-admin</password>
           </server>
   </servers>
-  <mirrors/>
+   <mirrors>
+  <mirror>
+   <!--This sends everything else to /public -->
+   <id>nexus</id>
+   <mirrorOf>*</mirrorOf>
+   <url>http://macbookprobigdata.local:8181/nexus/content/groups/public</url>
+  </mirror>
+ </mirrors>
   <proxies/> 
 
 <!-- http proxies, not maven proxy repositories -->
@@ -89,6 +96,7 @@
         </repository>
       </repositories> 
     </profile>
+    
     <profile>
         <id>talend_ci</id>
       <activation>
@@ -102,39 +110,36 @@
           <id>central</id>
           <name>central</name>
           <url>http://localhost:8181/nexus/content/repositories/maven-central/</url>
+          <releases><enabled>true</enabled></releases>
+           <snapshots><enabled>true</enabled></snapshots>
         </repository>
         <repository>        
           <id>talend-custom-libs-release</id>
           <name>talend-custom-libs-release</name>
           <url>http://localhost:8181/nexus/content/repositories/talend-custom-libs-release/</url>
           <layout>default</layout>
-                <releases>
-                    <enabled>true</enabled>
-                </releases>
-                <snapshots>
-                    <enabled>false</enabled>
-                </snapshots>
+                <releases> <enabled>true</enabled> </releases>
+                <snapshots> <enabled>false</enabled> </snapshots>
         </repository>
         <repository>  
           <id>talend-custom-libs-snapshot</id>
           <name>talend-custom-libs-snapshot</name>
           <url>http://localhost:8181/nexus/content/repositories/talend-custom-libs-snapshot/</url>
           <layout>default</layout>
-                <releases>
-                    <enabled>false</enabled>
-                </releases>
-                <snapshots>
-                    <enabled>true</enabled>
-                </snapshots>
+                <releases> <enabled>false</enabled> </releases>
+                <snapshots> <enabled>true</enabled> </snapshots>
         </repository>
       </repositories>
       <!-- plugins -->
+      
       <pluginRepositories>
         <pluginRepository>
           <id>central</id>
           <name>central</name>
           <url>http://localhost:8181/nexus/content/repositories/maven-central/</url>
-          <layout>default</layout>
+          <layout>default</layout> 
+          <releases><enabled>true</enabled></releases>
+          <snapshots><enabled>true</enabled></snapshots>
         </pluginRepository>
         <pluginRepository>
           <id>thirdparty</id>
