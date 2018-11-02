@@ -7,7 +7,7 @@
     <version>0.1</version> 
     <packaging>pom</packaging> 
     
-    
+
     <properties>
         <!-- Required. Commandline application workspace and Studio path, only for local(script) mode -->
         <!--commandline.workspace>${basedir}/commandline_workspace</commandline.workspace-->
@@ -40,12 +40,14 @@
       </plugins> 
     </build> 
     
+
+      
 <pluginRepositories>
     <!-- everything through Maven Central Proxy -->
         <pluginRepository>
             <id>central</id>
             <name>Central</name>
-            <url>http://macbookprobigdata.local:8181/nexus/content/repositories/central/</url>
+            <url>http://macbookprobigdata.local:8181/nexus/content/repositories/maven-central/</url>
         </pluginRepository>
         <pluginRepository>
             <id>thirdparty</id>

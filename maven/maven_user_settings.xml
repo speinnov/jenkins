@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.1.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.1.0 http://maven.apache.org/xsd/settings-1.1.0.xsd">
+
+  <localRepository>/Applications/CommandLine641/configuration/.m2/repository</localRepository>
+  <servers>
+          <!-- credentials to access the default releases/snapshots repositories -->
+          <server>
+            <username>deployment</username>
+            <password>deployment123</password>
+            <id>talend-releases</id>
+          </server>
+          <server>
+            <username>deployment</username>
+            <password>deployment123</password>
+            <id>talend-snapshots</id>
+          </server>
+           <!-- credentials to access the repositories Nexus --> 
+          <server>
+            <username>deployment</username>
+            <password>deployment123</password>
+            <id>nexus-repository</id>
+          </server>
+         <!-- credentials to access the repositories Nexus --> 
+          <server>
+            <username>deployment</username>
+            <password>deployment123</password>
+            <id>nexus-releases</id>
+          </server>
+    
+          <!-- credentials to access the repositories holding external jars -->  
+          <server>
+            <username>admin</username>
+            <password>Talend123</password>
+            <id>talend-custom-libs-release</id>
+          </server>
+          <server>
+            <username>admin</username>
+            <password>Talend123</password>
+            <id>talend-custom-libs-snapshot</id>
+          </server>
+          <!-- credentials to access the repositories holding maven plugins -->
+          <!-- central (as proxy) -->
+          <server> 
+            <username>admin</username>
+            <password>Talend123</password>
+            <id>central</id>
+          </server>
+          <server>
+            <username>admin</username>
+            <password>Talend123</password>
+            <id>thirdparty</id>
+          </server>
+          <server>
+             <id>talendNexusDeploy</id>
+             <username>deployment</username>
+             <password>deployment123</password>
+          </server>
+          <server>
+             <id>talendNexusLibs</id>
+             <username>talend-custom-libs-admin</username>
+             <password>talend-custom-libs-admin</password>
+          </server>
+  </servers>
+   <mirrors>
+     <!--This sends everything else to /public -->
+     <!--
+  <mirror>
+   <id>talendNexusDeploy</id>
+   <mirrorOf>*</mirrorOf>
+   <url>http://macbookprobigdata.local:8181/nexus/content/groups/public</url>
+  </mirror>
+  -->
+ </mirrors>
+  <proxies/> 
+
+<!-- http proxies, not maven proxy repositories -->
+  <profiles>
+    <profile>
+      <id>talendNexusLibs</id>
+      <activation>
+        <property>
+          <name>talendNexusLibs</name>
+          <value/>
+        </property>
+      </activation>
+      <repositories>
+        <repository>
+          <id>nexus-repository</id>
+          <url>http://localhost:8181/nexus/content/repositories/talend-custom-libs</url>
+          <releases>
+              <enabled>true</enabled>
+          </releases>
+          <snapshots>
+              <enabled>true</enabled>
+          </snapshots>
+        </repository>
+      </repositories> 
+    </profile>
+    
+    <profile>
+        <id>talend_ci</id>
+      <activation>
+        <property>
+          <name>talend_ci</name>
+          <value/>
+        </property>
+      </activation>
+      <repositories>
+        <repository>
+          <id>central</id>
+          <name>central</name>
+          <url>http://localhost:8181/nexus/content/repositories/maven-central/</url>
+          <releases><enabled>true</enabled></releases>
+           <snapshots><enabled>true</enabled></snapshots>
+        </repository>
+        <repository>        
+          <id>talend-custom-libs-release</id>
+          <name>talend-custom-libs-release</name>
+          <url>http://localhost:8181/nexus/content/repositories/talend-custom-libs-release/</url>
+          <layout>default</layout>
+                <releases> <enabled>true</enabled> </releases>
+                <snapshots> <enabled>false</enabled> </snapshots>
+        </repository>
+        <repository>  
+          <id>talend-custom-libs-snapshot</id>
+          <name>talend-custom-libs-snapshot</name>
+          <url>http://localhost:8181/nexus/content/repositories/talend-custom-libs-snapshot/</url>
+          <layout>default</layout>
+                <releases> <enabled>false</enabled> </releases>
+                <snapshots> <enabled>true</enabled> </snapshots>
+        </repository>
+      </repositories>
+      <!-- plugins -->
+      
+      <pluginRepositories>
+        <pluginRepository>
+          <id>central</id>
+          <name>central</name>
+          <url>http://localhost:8181/nexus/content/repositories/maven-central/</url>
+          <layout>default</layout> 
+          <releases><enabled>true</enabled></releases>
+          <snapshots><enabled>true</enabled></snapshots>
+        </pluginRepository>
+        <pluginRepository>
+          <id>thirdparty</id>
+          <name>thirdparty</name>
+          <url>http://localhost:8181/nexus/content/repositories/thirdparty/</url>
+          <layout>default</layout>
+        </pluginRepository>
+      </pluginRepositories>    
+    </profile>
+  </profiles>
+  <activeProfiles>
+    <activeProfile>talendNexusLibs</activeProfile>
+    <activeProfile>talend_ci</activeProfile>
+  </activeProfiles>
+</settings>

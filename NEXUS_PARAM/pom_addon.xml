@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.talend.master</groupId>
+  <artifactId>aggregator</artifactId>
+  <version>1.1.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <modules>
+    <module>CICD_TALEND</module>
+  </modules>
+   <!-- add to maven project on the studio -->
+ <distributionManagement>
+  <snapshotRepository>
+      <id>talend-snapshots</id>
+      <name>plugins-snapshot</name>
+      <url>http://localhost:8181/nexus/content/repositories/talend-snapshots/</url>
+    </snapshotRepository>
+    <releaseRepository>
+      <id>talend-releases</id>
+      <name>plugins-release</name>
+      <url>http://localhost:8181/nexus/content/repositories/talend-releases/</url>
+    </releaseRepository>
+  </distributionManagement>
+<!-- SCM control version -->
+<scm>
+    <connection>scm:git:https://github.com/speinnov/jenkins.git</connection>
+    <developerConnection>scm:git:https://github.com/speinnov/jenkins.git</developerConnection>
+    <tag>HEAD</tag>
+    <url>http://github.com/speinnov/jenkins</url>
+  </scm>
+<!--
+<scm>
+   <connection>scm:git:git@github.com:user/project.git</connection>
+   <url>scm:git:git@github.com:user/project.git</url>
+   <developerConnection>scm:git:git@github.com:user/project.git</developerConnection>
+</scm>
+-->
+<profiles>
+   <profile>
+      <id>releases</id>
+  <!-- disable the existing, default mapping -->
+
+  <build>
+    <pluginManagement>
+      <plugins>
+	<plugin>
+	   <groupId>org.apache.maven.plugins</groupId>
+	   <artifactId>maven-deploy-plugin</artifactId>
+	   <version>2.8.1</version>
+	   <configuration>
+	      <skip>true</skip>
+	   </configuration>
+	</plugin>
+	<!-- activate the nexus  plugin -->
+	<plugin>
+	   <groupId>org.sonatype.plugins</groupId>
+	   <artifactId>nexus-staging-maven-plugin</artifactId>
+	   <version>1.5.1</version>
+	   <executions>
+	      <execution>
+	         <id>default-deploy</id>
+	         <phase>deploy</phase>
+	         <goals>
+	            <goal>deploy</goal>
+	         </goals>
+	      </execution>
+	   </executions>
+	   <configuration>
+	      <serverId>nexus-releases</serverId>
+	      <nexusUrl>http://localhost:8181/nexus/</nexusUrl>
+	      <skipStaging>true</skipStaging>
+	   </configuration>
+	</plugin>
+   </plugins>
+    </pluginManagement>
+   
+  </build>
+  <!--  -->
+   
+   </profile>
+</profiles>
+	
+</project>

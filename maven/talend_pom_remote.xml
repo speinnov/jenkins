@@ -40,13 +40,32 @@
       </plugin> 
       </plugins> 
     </build> 
-    
+    <!--
+    <repositories>
+    <repository>
+      <releases>
+        <enabled>false</enabled>
+        <updatePolicy>always</updatePolicy>
+        <checksumPolicy>warn</checksumPolicy>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+        <updatePolicy>never</updatePolicy>
+        <checksumPolicy>fail</checksumPolicy>
+      </snapshots>
+      <id>central</id>
+      <name>maven-central</name>
+      <url>http://macbookprobigdata.local:8181/nexus/content/repositories/maven-central/</url>
+      <layout>default</layout>
+    </repository>
+  </repositories>
+    -->
 <pluginRepositories>
     <!-- everything through Maven Central Proxy -->
         <pluginRepository>
             <id>central</id>
             <name>Central</name>
-            <url>http://macbookprobigdata.local:8181/nexus/content/repositories/central/</url>
+            <url>http://macbookprobigdata.local:8181/nexus/content/repositories/maven-central/</url>
         </pluginRepository>
         <pluginRepository>
             <id>thirdparty</id>
