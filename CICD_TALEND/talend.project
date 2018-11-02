@@ -469,4 +469,5 @@
   <TalendProperties:User xmi:id="_UfN2YdqhEeioZdyB7ReNPw" login="social@gen.com" firstName="CICD TALEND" lastName="Tester" type="DQ" additionnalData="{}"/>
   <TalendProperties:User xmi:id="_UfN2YtqhEeioZdyB7ReNPw" login="social@gen.com" firstName="CICD TALEND" lastName="Tester" type="DQ" additionnalData="{}"/>
   <TalendProperties:User xmi:id="_UfN2Y9qhEeioZdyB7ReNPw" login="cicd@gen.com" firstName="CICD Jenkins" lastName="talend" type="DQ" additionnalData="{}"/>
+  <TalendProperties:User xmi:id="_cd0jMd6oEeiNk_qdc-rF_w" login="user@talend.com"/>
 </xmi:XMI>
