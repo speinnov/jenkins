@@ -154,7 +154,6 @@
     </ItemsRelations>
     <ItemsRelations xmi:id="_MGrGcOGZEeiusY_7mls9zQ">
       <baseItem xmi:id="_MGrGceGZEeiusY_7mls9zQ" id="_TpQ8cOf8EeSecL1VY58-Ww" version="0.1" type="job"/>
-      <relatedItems xmi:id="_MGrGcuGZEeiusY_7mls9zQ" id="_1dXowOf_EeSecL1VY58-Ww" version="Latest" type="context"/>
       <relatedItems xmi:id="_MGrGc-GZEeiusY_7mls9zQ" id="SQLike" version="Latest" type="routine"/>
       <relatedItems xmi:id="_MGrGdOGZEeiusY_7mls9zQ" id="Numeric" version="Latest" type="routine"/>
       <relatedItems xmi:id="_MGrGdeGZEeiusY_7mls9zQ" id="TalendString" version="Latest" type="routine"/>
@@ -172,6 +171,7 @@
       <relatedItems xmi:id="_MGrGgeGZEeiusY_7mls9zQ" id="Thumbnail" version="Latest" type="routine"/>
       <relatedItems xmi:id="_MGrGguGZEeiusY_7mls9zQ" id="MDM" version="Latest" type="routine"/>
       <relatedItems xmi:id="_MGrGg-GZEeiusY_7mls9zQ" id="ESBProperties" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_AzHSEOGaEeiusY_7mls9zQ" id="TalendStringUtil" version="Latest" type="routine"/>
     </ItemsRelations>
     <migrationTask xmi:id="_9GmSkN6wEeiTXvy9iU7uKA" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_9GmSkd6wEeiTXvy9iU7uKA" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
