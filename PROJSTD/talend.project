@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Project xmi:id="_aNFUkXQiEem6OepalWpMjQ" label="projstd" description="projet standard" language="java" technicalLabel="PROJSTD" creationDate="2019-05-11T21:21:49.121+0200" author="_aNFUknQiEem6OepalWpMjQ" productVersion="Talend Big Data Platform-6.4.1.20170623_1246" url="{&quot;commitLogPattern&quot;:&quot;{0}&quot;,&quot;location&quot;:&quot;https://github.com/speinnov/jenkins.git&quot;,&quot;login&quot;:&quot;akhenouche@spectrum-innovation.com&quot;,&quot;passwd&quot;:&quot;bNmX450bopPlaqE79ZhxTA==&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DQ"/>
+  <TalendProperties:User xmi:id="_aNFUknQiEem6OepalWpMjQ" login="cicd@gen.com" firstName="CICD Jenkins" lastName="talend" type="DQ" additionnalData="{}"/>
+</xmi:XMI>
