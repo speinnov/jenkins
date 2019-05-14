@@ -360,5 +360,6 @@
     <migrationTask xmi:id="_aeo_bHQiEem6OepalWpMjQ" id="org.talend.repository.model.migration.SetSparkDataframeAlphabeticalSortOrder" breaks="6.1.0" version="6.1.0" status="noimpact"/>
     <migrationTask xmi:id="_aeo_bXQiEem6OepalWpMjQ" id="org.talend.repository.model.migration.AutoUpdateRelationsMigrationTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
   </TalendProperties:Project>
-  <TalendProperties:User xmi:id="_aNFUknQiEem6OepalWpMjQ" login="cicd@gen.com" firstName="CICD Jenkins" lastName="talend" type="DQ" additionnalData="{}"/>
+  <TalendProperties:User xmi:id="_aNFUknQiEem6OepalWpMjQ" login="cicd@gen.com" firstName="CICD Jenkins admin" lastName="talend" type="DQ" additionnalData="{}"/>
+  <TalendProperties:User xmi:id="_DqvIAXaeEemIhfMeU7J-og" login="social@gen.com" firstName="CICD TALEND admin" lastName="Tester" type="DQ" additionnalData="{}"/>
 </xmi:XMI>
